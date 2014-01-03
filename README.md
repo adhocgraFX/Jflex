@@ -2,24 +2,30 @@ JFlex 2014
 ============
 responsive Joomla! 3.2 template
 
-JFlex is started a copy of JFlex_j3 2013
+JFlex is started as a copy of JFlex_j3 2013
 
-JFlex uses an off canvas navigation pattern, inspired by David Bushell.
+JFlex is experimental and work in progress
 
-JFlex is responsive, by integrating Nathan Smiths unsemantic grid system.
 
-JFlex is experimental and work in progress.
-
-TODOS for JFlex 2014:
-=====================
+TODOS for JFlex in 2014:
+========================
 update to Bootstrap 3 (...)
 
 update to font awesome 4 (...)
 
-change to pocket grid (in index.php)
+change grid system in index.php > semantics
+
+more consequent implementation of html5 boilerplate
 
 more consequent mobile first concept
 
-more consequent implementation of html5 boilerplateht
+more consequent section layout
 
-more consequent grayscale color scheme
+greyscale color scheme
+
+simplify index.php
+
+
+GOOD THINGS TO KEEP:
+====================
+off canvas navigation pattern, inspired by David Bushell
