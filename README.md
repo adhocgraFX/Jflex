@@ -26,6 +26,6 @@ greyscale color scheme
 simplify index.php
 
 
-GOOD THINGS TO KEEP:
+Good things to keep:
 ====================
 off canvas navigation pattern, inspired by David Bushell
