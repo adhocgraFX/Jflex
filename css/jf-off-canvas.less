@@ -1,9 +1,3 @@
-//  Core variables and mixins
-@import "bootstrap/variables.less";
-  // Modify this for custom colors, font-sizes, etc
-@import "bootstrap/mixins.less";
-@import "my-variables.less";
-
 // hack von Nathan Smith - obs was bringt?
 :focus {
   -moz-outline-style: none !important;
@@ -48,10 +42,9 @@
 
 a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="reset"].nav-btn, input[type="button"].nav-btn {
   padding: .5em 1em !important;
-  margin: 1.2em 0 0 0 !important;
+  margin: 1.2em 1em 0 1em !important;
   text-align: center;
   max-height: 3em !important;
-  width: 100% !important;
 }
 
 a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type="reset"].close-btn, input[type="button"].close-btn {
@@ -335,7 +328,7 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
     color: #444;
     position: absolute;
     top: 0;
-    padding-top: 5em;
+    padding: 5em 1em 0 1em;
 
     .close-btn {
       position: absolute;

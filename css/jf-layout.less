@@ -1,67 +1,24 @@
+// Jflex
 //
-// Jflex_j3
-//
-// adhocgrafx v1.0
-// Copyright 2012, Johannes Hock
+// Copyright 2014, Johannes Hock
 // www.adhocgrafx.de
 // Free to use under the MIT license.
 // http://www.opensource.org/licenses/mit-license.php
-// 3/3/2012
+// 1/1/2014
 //
-
-// Core variables and mixins
-@import "bootstrap/variables.less";
-@import "bootstrap/mixins.less";
-// Modify this for custom colors, font-sizes, etc
-@import "my-variables.less";
-
 
 /* Table of Content
 ==================================================
 	#media queries
 	#Joomla! Styles = classes and ids for Joomla! specific views
 
-	#Joomla! Styles in progress of evaluation - most ok  */
-
 /* media queries
 ======================================================== */
-@media screen and (max-width: 480px) {
-}
 
-@media screen and (max-width: 767px) {
-  //  - thats enough - 100% = 16px for paragraph with new typeplate scale - lazy font scaling
-  body {
-    font-size: 100%;
-  }
+@media screen and (max-width: 48em) {
 
-  header {
-    background: transparent !important;
-    border-bottom: 0 !important;
-
-    .headerlogo {
-	margin: 1em 0;
-
-    	h1.logotext-top {
-	}
-
-    	h1.logotext-sub {
-	  margin-bottom: 0 !important;
-    	}
-    }
-  }
-
-  #main-pad {
-    margin: 0 auto !important;
-    padding: 0 !important;
-  }
-
-  #sidebar, .tabouter {
-    margin-top: 5px !important;
-  }
-
-  // eigentlich ohne bc
   .breadcrumb li:first-child, .breadcrumb li:last-child, .breadcrumb li a {
-    padding: 5px;
+    padding: .5em;
   }
 
   // lösung für Spaltensatz > nur eine spalte zulassen
@@ -92,7 +49,7 @@
   }
 
   .nav-module-pad {
-    padding: 1em !important;
+    padding: 1em 0 !important;
   }
 
   a, button, nav, menu {
@@ -114,25 +71,46 @@
   }
 
   .module.search-style {
-    margin: 1em 0 !important;
+    margin: 0 !important;
   }
 }
 
-// #Joomla! Styles = classes and ids for Joomla! specific views
-// ===============================================================
-// ids menüleisten und header
+// # pocket grid system
+// =============================
+.block-group {
+  margin: -1em;
+}
 
+.block {
+  padding: 1em;
+}
+
+@media screen and (min-width: 48em) {
+
+  section[role ="main"] {
+    width: 61.8%; /* goldener Schnitt */
+  }
+
+  aside[role="complementary"] {
+    width: 38.2%; /* goldener Schnitt */
+  }
+
+}
+
+// #Joomla! Styles = classes and ids for Joomla! specific views
+// ============================================================
+
+// ids menüleisten und header
 #main {
   display: block;
 }
 
 #main-pad {
-    margin: 1em auto !important;
-    padding: 1em 0 !important;
+    margin: 1em auto;
 }
 
 #sidebar {
-  margin-top: 10px;
+
 }
 
 .actions-pad {
@@ -145,32 +123,55 @@
 }
 
 .slideshow-pad {
-  // display: block;
+
   ul.slides {
-    // padding: 0 !important;
-    // margin: 0 !important;
+
   }
 }
 
-.footer-pad, .copy-pad {
+.nav-close-pad, .nav-module-pad {
+  width: 100%;
+  display: block;
+}
+
+.nav-module-pad {
+  height: 3em;
+}
+
+footer, .copy-pad {
   font-size: 81.25%;
   display: block;
   text-align: center;
   padding: 1em;
-//  color: @whitesmoke !important;
-//	a {
-//	  color: @smoke;
-//	  &:hover, &:focus {
-//	    color: @white;
-//	  }
-//	}
 }
 
-.footer-pad {
-  margin-top: 1em;
+.copy-pad {
+
+  a {
+    color: @white !important;
+    .border-radius(.25em);
+    display: inline-block;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+    padding: .5em 1em;
+
+    &:hover {
+	color: @whitesmoke;
+	background: @concrete;
+    }
+
+    &:active {
+	color: @whitesmoke;
+	background: @concreteDark;
+    }
+  }
 }
+
 .headerlogo {
-  margin: 1em 0;
+  padding: .25em 0;
+
   a {
     width: 100%;
     background: transparent;
@@ -194,19 +195,7 @@
     font-size: 2.1em;
     margin-top: 0 !important;
     margin-bottom: 1em;
-    span.j-blue {
-	color: @joomla-blue;
     }
-    span.j-red {
-	color: @joomla-red;
-    }
-    span.j-orange {
-	color: @joomla-orange;
-    }
-    span.j-green {
-	color: @joomla-green !important;
-    }
-  }
 }
 
 // good old contentpane
@@ -230,7 +219,6 @@
 // ==================================================
 // Module chrome joomskeleton
 .module {
-  color: @white;
   background: transparent;
   margin-bottom: 1.5em;
   display: block;
@@ -242,10 +230,13 @@
   }
 
   .module-body {
+    background: @white;
     padding: 1em;
     display: block;
     overflow: hidden;
     height: 100%;
+    color: @grayDark;
+    border: 1px solid @gainsboro;
 
     div {
       width: 100%;
@@ -266,7 +257,7 @@
     margin: 0;
 
     h4.title {
-	color: @whitesmoke !important;
+	color: @smoke !important;
 	font-size: 1.25em;
 	line-height: 1.4;
 	padding: 0;
@@ -278,49 +269,27 @@
 /* modulfarben allgemein  -  grau- und schwarzwerte  */
 .white {
   .module-body {
-    color: @gray;
-    background: @white;
-    border: 1px solid @gainsboro;
-    border-bottom: .5em solid @gainsboro;
+    border-bottom: .5em solid @gainsboroDark;
   }
 
   .module-title {
-    background: @gainsboro;
-    h4.title {
-	color: @grayDark !important;
-    }
+    background: darken(@gainsboroDarker, 10%);
   }
 }
 
 .clouds {
   .module-body {
-    color: @gray;
-    background: @clouds;
-    border: 1px solid @cloudsDark;
     border-bottom: .5em solid @cloudsDark;
   }
 
   .module-title {
-    background: @cloudsDark;
-    h4.title {
-	color: @grayDark !important;
-    }
+    background: darken(@cloudsDark, 10%);
   }
 }
 
 .concrete {
   .module-body {
-    background: @concrete;
-    border: 1px solid @concreteDark;
-    border-bottom: .5em solid @concreteDark;
-
-    p {
-      color: @white;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      color: @grayLighter;
-    }
+    border-bottom: .5em solid @concrete;
   }
 
   .module-title {
@@ -331,9 +300,7 @@
 /* bunte modulfarben für infos - blau, rot, grün, gelb */
 .midnightblue {
   .module-body {
-    background: @midnightblue;
-    border: 1px solid @midnightblueDark;
-    border-bottom: .5em solid @midnightblueDark;
+    border-bottom: .5em solid @midnightblue;
   }
 
   .module-title {
@@ -344,9 +311,6 @@
 // JUGFulda blue
 .jugfuldablue {
   .module-body {
-    background: @white;
-    color: @jugfuldablueDark;
-    border: 1px solid @lightjugfuldablue;
     border-bottom: .5em solid @jugfuldablue;
   }
 
@@ -357,9 +321,7 @@
 
 .turquoise {
   .module-body {
-    background: @turquoise;
-    border: 1px solid @turquoiseDark;
-    border-bottom: .5em solid @turquoiseDark;
+    border-bottom: .5em solid @turquoise;
   }
 
   .module-title {
@@ -369,9 +331,7 @@
 
 .blue, .info {
   .module-body {
-    background: @blue;
-    border: 1px solid @blueDark;
-    border-bottom: .5em solid @blueDark;
+    border-bottom: .5em solid @blue;
   }
 
   .module-title {
@@ -381,15 +341,7 @@
 
 .my-red, .alert {
   .module-body {
-    background: @red;
-    border: 1px solid @redDark;
-    border-bottom: .5em solid @redDark;
-    p {
-      color: @white;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: @grayLighter;
-    }
+    border-bottom: .5em solid @red;
   }
 
   .module-title {
@@ -399,9 +351,7 @@
 
 .green, .success {
   .module-body {
-    background: @green;
-    border: 1px solid @greenDark;
-    border-bottom: .5em solid @greenDark;
+    border-bottom: .5em solid @green;
   }
 
   .module-title {
@@ -411,11 +361,8 @@
 
 .yellow, .question {
   .module-body {
-    background: @yellow;
-    border: 1px solid @yellowDark;
-    border-bottom: .5em solid @yellowDark;
-    color: maroon;
-  }
+    border-bottom: .5em solid @yellow;
+}
 
   .module-title {
     background: @yellowDark;
@@ -424,9 +371,7 @@
 
 .orange {
   .module-body {
-    background: @orange;
-    border: 1px solid @orangeDark;
-    border-bottom: .5em solid @orangeDark;
+    border-bottom: .5em solid @orange;
   }
 
   .module-title {
@@ -436,20 +381,21 @@
 
 /* module chrome for menu style */
 .style {
-  border: 0 !important;
   background: transparent !important;
 
   .module-title {
     background: transparent !important;
     padding: .5em 0;
+
     h4.title {
-	color: @grayDark !important;
+	color: darken(@concreteDark, 10%)  !important;
     }
   }
 
   .module-body {
     padding: 0 0 1em 0 !important;
     background: transparent !important;
+    border: 0 !important;
 
     ul li {
       margin-bottom: 5px !important;
@@ -493,19 +439,20 @@
 	  margin: 0 !important;
 
 	  a {
+	    color: @grayDark;
 	    display: block;
 	    padding: .5em 1em;
 	    border-bottom: 1px solid @gainsboroLight;
 
 	    &:hover {
-	      color: @whitesmoke;
-	  	background: @cloudsDark !important;
+	      color: @grayDark;
+	  	background: @gainsboroDark !important;
 	  	text-decoration: none !important;
 	    }
 
 	    &:focus, &:active, .active {
 	  	color: @smoke;
-	  	background: @concrete !important;
+	  	background: @gainsboroDarker !important;
 	    }
 	  }
 
@@ -523,22 +470,13 @@
     	}
     }
   }
-}
-
-// bootstrap accordion overrides
-.accordion-group {
-  border: 0 !important;
-  .border-radius(none);
-}
-
-.menu-style {
 
   .accordion {
     margin-bottom: 0;
   }
 
   .accordion-inner ul {
-    background: @clouds;
+    background: @gainsboroLight;
   }
 
   .accordion-heading .accordion-toggle {
@@ -547,21 +485,22 @@
 
   a.accordion-toggle {
     text-decoration: none !important;
+    color: @grayDark !important;
 
     &:hover {
-	color: @whitesmoke;
-	background: @cloudsDark !important;
+	color: @grayDark;
+	background: @gainsboroDark !important;
     }
 
     &:focus, &:active, .active {
-	color: @smoke;
-	background: @concrete !important;
+	color: @smoke !important;
+	background: @gainsboroDarker !important;
     }
 
     &.accordion-parent.even {
 	text-decoration: none !important;
-	color: @whitesmoke;
-	background: @cloudsDark !important;
+	color: @smoke !important;
+	background: @jugfuldablueDark !important;
 
 	&:before {
 	  font-family: FontAwesome;
@@ -584,16 +523,22 @@
 	}
 
 	&:hover {
-	  color: @smoke;
-	  background: @concrete !important;
+	  color: @smoke !important;
+	  background: @jugfuldablue !important;
 	}
 
 	&:focus, &:active {
 	  color: @smoke;
-	  background: @concreteDark !important;
+	  background: @jugfuldablueDarker !important;
 	}
     }
   }
+}
+
+// bootstrap accordion overrides
+.accordion-group {
+  border: 0 !important;
+  .border-radius(none);
 }
 
 /* module chrome transparent */
@@ -601,7 +546,7 @@
   .module-body {
     background: transparent;
     border: 0 !important;
-    color: @concreteDark !important;
+    color: inherit !important;
     padding: 0 !important;
   }
 
@@ -609,7 +554,7 @@
     background: transparent;
     padding: 0 !important;
     h4.title {
-	color: @concreteDark !important;
+	color: inherit !important;
     }
   }
 }
@@ -722,14 +667,14 @@ ul.mynav {
   }
 }
 
-.gototop-pad {
+.gototop-pad  {
   padding: 1em 0;
   text-align: center;
   ul li {
     list-style-type: none;
 
     a {
-      color: @white;
+      color: @white !important;
       background: @cloudsDark;
       .border-radius(20em);
       display: inline-block;
@@ -759,13 +704,11 @@ ul.mynav {
   font-size: 1em;
   background: transparent;
 }
-.breadcrumbs-pad {
-  padding-left: 1em !important;
-}
+
 .textresizer-pad {
-  padding-right: 1em !important;
   text-align: center;
 }
+
 .breadcrumb {
   font-size: .875em !important;
   width: 100%;
@@ -774,7 +717,7 @@ ul.mynav {
   margin: 0;
   list-style-type: none;
   overflow: hidden;
-  background: transparent !important;
+  background: transparent;
 
   li {
     list-style: none;
@@ -792,18 +735,17 @@ ul.mynav {
     display: block;
     float: left;
     padding: .5em 1em;
-    color: @gray;
-    text-shadow: 0 0 0 transparent;
-    background: @whitesmoke;
+    color: @grayDark;
+    background: @gainsboroLight;
     .border-radius(@baseBorderRadius);
 
     &:hover {
-      color: @gray;
+      color: @grayDark;
       background: @gainsboro;
     }
 
     &:focus, &:active {
-      color: @whitesmoke;
+      color: @smoke;
       background: @gainsboroDark;
     }
   }
@@ -813,7 +755,7 @@ ul.mynav {
   }
 
   li:last-child {
-    padding: .6em 0;
+    padding: .5em 0;
   }
 
   li span.divider {
@@ -1231,7 +1173,7 @@ p.counter {
   margin: 0;
   border-bottom: 0 !important;
 
-  h2, h2.subtitle {
+  h1, h2, h2.subtitle {
     margin-top: 0;
   }
 }
@@ -1302,7 +1244,6 @@ article {
 
   ul {
     list-style-type: none;
-    color: #666;
   }
 }
 
@@ -1501,7 +1442,8 @@ input[type="text"], input[type="password"], input[type="email"], select {
   height: @inputHeight;
 }
 
-// bootstrap override
+// bootstrap overrides
+//====================
 textarea,
 input[type="text"],
 input[type="password"],
@@ -1524,6 +1466,15 @@ input[type="color"],
     border-color: @concrete;
     .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0,0,0,.25)");
   }
+}
+// fluid rows adaptions
+.row-fluid {
+  padding: 1em 1em 0 1em;
+}
+
+// first left module in second, third, ... row
+.new-row{
+  margin-left: 0 !important;
 }
 
 // textarea override

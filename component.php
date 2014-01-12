@@ -23,9 +23,8 @@ $sitetitle = $this->params->get('sitetitle');
     <!DOCTYPE html>
     <head>
         <jdoc:include type="head" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/my-base.css" type="text/css" media="screen, print" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/my-layout.css" type="text/css" media="screen, print" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/print.css" type="text/css" media="print" />
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jf-template.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jf-print.css" type="text/css" media="print" />
     </head>
     <body class="contentpane">
     <?php if ($logo): ?>
@@ -35,7 +34,7 @@ $sitetitle = $this->params->get('sitetitle');
     <?php endif;?>
     <jdoc:include type="message" />
     <jdoc:include type="component" />
-    <div id="copy-pad"><p>JFlex | 2013 | adhocgraFX | &copy; | alle Rechte vorbehalten</p></div>
+    <div id="copy-pad"><p>JFlex | 2014 | adhocgraFX | &copy; | alle Rechte vorbehalten</p></div>
     </body>
     </html>
 <?php endif; ?>

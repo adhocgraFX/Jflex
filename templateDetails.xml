@@ -77,7 +77,10 @@
 				<field name="tabtextcolor" type="color" default="#444444" label="TPL_JF3_FIELD_TTCOLOR_LABEL" description="TPL_JF3_FIELD_TTCOLOR_DESC" size="7" class="color" ></field>
                 <field name="TPL_JF3_FIELD_SPACER_HEADCOLOR_DESC" type="spacer" hr="false" />
                 <field name="headercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_HRCOLOR_LABEL" description="TPL_JF3_FIELD_HRCOLOR_DESC" size="7" class="color" ></field>
+                <field name="footercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_FRCOLOR_LABEL" description="TPL_JF3_FIELD_FRCOLOR_DESC" size="7" class="color" ></field>
                 <field name="headerbordercolor" type="color" default="#aaaaaa" label="TPL_JF3_FIELD_HRBCOLOR_LABEL" description="TPL_JF3_FIELD_HRBCOLOR_DESC" size="7" class="color" ></field>
+                <field name="headrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_HROWCOLOR_LABEL" description="TPL_JF3_FIELD_HROWCOLOR_DESC" size="7" class="color" ></field>
+                <field name="bottomrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_BROWCOLOR_LABEL" description="TPL_JF3_FIELD_BROWCOLOR_DESC" size="7" class="color" ></field>
                 <field name="TPL_JF3_FIELD_SPACER_TITLECOLOR_DESC" type="spacer" hr="false" />
                 <field name="mtcolor" type="color" default="#666666" label="TPL_JF3_FIELD_MTCOLOR_LABEL" description="TPL_JF3_FIELD_MTCOLOR_DESC" size="7" class="color" ></field>
                 <field name="stcolor" type="color" default="#444444" label="TPL_JF3_FIELD_STCOLOR_LABEL" description="TPL_JF3_FIELD_STCOLOR_DESC" size="7" class="color" ></field>
@@ -150,19 +153,11 @@
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>
-                <field name="modulor" type="radio" default="1" label="TPL_JF3_FIELD_MODULOR_LABEL" description="TPL_JF3_FIELD_MODULOR_DESC">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
-                </field>
-                <field name="fontmobile" type="radio" default="1" label="TPL_JF3_FIELD_FONTMOBILE_LABEL" description="TPL_JF3_FIELD_FONTMOBILE_DESC">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
-                </field>
                 <field name="textindent" type="radio" default="0" label="TPL_JF3_FIELD_TINDENT_LABEL" description="TPL_JF3_FIELD_TINDENT_DESC">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>
-                <field name="basefontsize" type="text" default="112.5" label="TPL_JF3_FIELD_BFSIZE_LABEL" description="TPL_JF3_FIELD_BFSIZE_DESC" ></field>
+                <field name="basefontsize" type="text" default="100" label="TPL_JF3_FIELD_BFSIZE_LABEL" description="TPL_JF3_FIELD_BFSIZE_DESC" ></field>
             </fieldset>
             <fieldset name="advanced">
 				<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_JF3_FIELD_ANALYTICS_LABEL" description="TPL_JF3_FIELD_ANALYTICS_DESC" size="15" />
@@ -171,16 +166,12 @@
                     <option value="0">JNO</option>
                 </field>
                 <field name="TPL_JF3_FIELD_SPACER_WRAPPER_DESC" type="spacer" hr="false" />
-				<field name="maxwidth" type="text" filter="integer" default="1200" label="TPL_JF3_FIELD_MWIDTH_LABEL" description="TPL_JF3_FIELD_MWIDTH_DESC" size="4" ></field>
-                <field name="wunit" type="list" default="px" label="TPL_JF3_FIELD_WUNIT_LABEL" description="TPL_JF3_FIELD_WUNIT_DESC">
-                    <option value="px">px</option>
+				<field name="maxwidth" type="text" filter="integer" default="50" label="TPL_JF3_FIELD_MWIDTH_LABEL" description="TPL_JF3_FIELD_MWIDTH_DESC" size="4" ></field>
+                <field name="wunit" type="list" default="em" label="TPL_JF3_FIELD_WUNIT_LABEL" description="TPL_JF3_FIELD_WUNIT_DESC">
                     <option value="em">em</option>
+                    <option value="px">px</option>
                 </field>
-                <field name="rtl" type="radio" default="0" label="TPL_JF3_FIELD_RTL_LABEL" description="TPL_JF3_FIELD_RTL_DESC">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
-				</field>
-				<field name="TPL_JF3_FIELD_SPACER_GRID_DESC" type="spacer" hr="false" />
+                <field name="TPL_JF3_FIELD_SPACER_GRID_DESC" type="spacer" hr="false" />
 				<field name="gridsort" type="list" default="text" label="TPL_JF3_FIELD_GSORT_LABEL" description="TPL_JF3_FIELD_GSORT_DESC">
 					<option value='mr'>main | right</option>
 					<option value='lm'>left | main</option>
