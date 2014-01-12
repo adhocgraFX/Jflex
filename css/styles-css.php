@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * @copyright	© 2011 adhocgraFX Johannes Hock 2011 - All Rights Reserved.
@@ -36,7 +36,7 @@
 <style type="text/css">
 h1, h2, h3, h4, h5, h6, p.lead, p.bildlegende, p.autor, blockquote {
  	color: <?php echo $headlineColor;?> !important;
-}	
+}
 	<?php if ($headfont != "default"):?>
 		h1, h2, h3, h4, h5, h6 {
 			font-family: <?php echo htmlspecialchars($headfont); ?>, Helvetica, Arial, sans-serif; }
@@ -73,6 +73,7 @@ body  {
     max-width: <?php echo $maxwidth;?><?php echo $wunit;?>;
  	background: <?php echo $bodyColor;?>;
 }
+
 section.head-row {
     background: <?php echo $hrowColor;?>;
 }
@@ -143,7 +144,7 @@ h1.logotext-sub {
 <?php if ($bodybackground): ?>
 	#outer-wrapper { background: transparent; }
 	@media screen and (max-width: 48em) {
-		#outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
+	#outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
 	}
 <?php else : ?>
 	#outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
@@ -269,15 +270,15 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
 
 </style>
 
-<!--[if lt IE 9 ]> 
-	<style type="text/css"> 
+<!--[if lt IE 9 ]>
+	<style type="text/css">
 		.no-flexbox {}
-		.no-canvas {} 
-		.no-canvastext {} 
-		.no-websqldatabase {} 
-		.no-indexeddb {} 
-		.no-history {} 
-		.no-websockets {} 
+		.no-canvas {}
+		.no-canvastext {}
+		.no-websqldatabase {}
+		.no-indexeddb {}
+		.no-history {}
+		.no-websockets {}
 		.no-rgba {}
 		.no-hsla {}
 		.no-multiplebgs {}
@@ -294,16 +295,16 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
 		.no-csstransforms {}
 		.no-csstransforms3d {}
 		.no-csstransitions {}
-		.no-video {} 
-		.no-audio {} 
-		.no-webworkers {} 
+		.no-video {}
+		.no-audio {}
+		.no-webworkers {}
 		.no-applicationcache {}
-	</style> 
+	</style>
 <![endif]-->
-		
-<!--[if lt IE 8 ]> 
-	<style type="text/css"> 
-		.no-hashchange {} 
-		.no-generatedcontent {} 
-	</style> 
+
+<!--[if lt IE 8 ]>
+	<style type="text/css">
+		.no-hashchange {}
+		.no-generatedcontent {}
+	</style>
 <![endif]-->

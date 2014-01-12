@@ -99,7 +99,6 @@
 
 // #Joomla! Styles = classes and ids for Joomla! specific views
 // ============================================================
-
 // ids menüleisten und header
 #main {
   display: block;
@@ -265,13 +264,20 @@ footer, .copy-pad {
     }
   }
 }
+// module-body dark-body für dunkle hintergründe
+.dark-body {
+  .module-body {
+    background: @grayDark;
+    color: @smoke;
+    border: 1px solid @black;
+  }
+}
 
-/* modulfarben allgemein  -  grau- und schwarzwerte  */
+// modulfarben allgemein  -  grau- und schwarzwerte
 .white {
   .module-body {
     border-bottom: .5em solid @gainsboroDark;
   }
-
   .module-title {
     background: darken(@gainsboroDarker, 10%);
   }
@@ -281,7 +287,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @cloudsDark;
   }
-
   .module-title {
     background: darken(@cloudsDark, 10%);
   }
@@ -291,7 +296,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @concrete;
   }
-
   .module-title {
     background: @concreteDark;
   }
@@ -302,18 +306,16 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @midnightblue;
   }
-
   .module-title {
     background: @midnightblueDark;
   }
 }
 
-// JUGFulda blue
+// JUG Fulda blue
 .jugfuldablue {
   .module-body {
     border-bottom: .5em solid @jugfuldablue;
   }
-
   .module-title {
     background: @jugfuldablueDark;
   }
@@ -323,7 +325,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @turquoise;
   }
-
   .module-title {
     background: @turquoiseDark;
   }
@@ -333,7 +334,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @blue;
   }
-
   .module-title {
     background: @blueDark;
   }
@@ -343,7 +343,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @red;
   }
-
   .module-title {
     background: @redDark;
   }
@@ -353,7 +352,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @green;
   }
-
   .module-title {
     background: @greenDark;
   }
@@ -363,7 +361,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @yellow;
 }
-
   .module-title {
     background: @yellowDark;
   }
@@ -373,7 +370,6 @@ footer, .copy-pad {
   .module-body {
     border-bottom: .5em solid @orange;
   }
-
   .module-title {
     background: @orangeDark;
   }

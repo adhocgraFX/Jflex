@@ -2,88 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c26cc59-147d-4905-8287-b2e1c6f93e3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jf-flexslider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jf-print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.mobile.js" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\accordion.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\bootstrap-extended.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\close.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\code.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\forms.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\grid.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\hero-unit.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\labels-badges.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\layouts.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\media.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\modals.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\navs.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\pager.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\reset.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\responsive-1200px-min.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\responsive-767px-max.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\responsive-768px-979px.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\responsive-navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\responsive.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\sprites.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\tables.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\type.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\typeplate.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\bootstrap\wells.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\flexslider.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\font-awesome-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\font-awesome-ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-base.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-base.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-layout.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-layout.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-off-canvas.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-off-canvas.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\my-variables.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\print.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\print.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\rtl-layout.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\rtl-layout.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\template.css.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\unsemantic-grid-responsive-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\unsemantic-grid-responsive-rtl.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\unsemantic-grid-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\unsemantic-grid-responsive.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component.php" afterPath="$PROJECT_DIR$/component.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" afterPath="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" afterPath="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-layout.less" afterPath="$PROJECT_DIR$/css/jf-layout.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.css" afterPath="$PROJECT_DIR$/css/jf-template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-css.php" afterPath="$PROJECT_DIR$/css/styles-css.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templateDetails.xml" afterPath="$PROJECT_DIR$/templateDetails.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jflex.iws" />
@@ -110,7 +32,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="41" selection-start="11165" selection-end="11165" vertical-scroll-proportion="-45.51351" vertical-offset="4976" max-vertical-offset="13800">
+            <state line="184" column="10" selection-start="8521" selection-end="8521" vertical-scroll-proportion="181.83784" vertical-offset="12248" max-vertical-offset="13800">
               <folding>
                 <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -122,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jf-layout.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jf-layout.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="556" column="21" selection-start="9243" selection-end="9243" vertical-scroll-proportion="0.72342736" vertical-offset="16013" max-vertical-offset="49560">
+            <state line="275" column="51" selection-start="4472" selection-end="4472" vertical-scroll-proportion="-12.351352" vertical-offset="7793" max-vertical-offset="49440">
               <folding />
             </state>
           </provider>
@@ -134,8 +56,21 @@
       <file leaf-file-name="jf-variables.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="29" selection-start="1071" selection-end="1077" vertical-scroll-proportion="-10.540541" vertical-offset="720" max-vertical-offset="6930">
+            <state line="19" column="5" selection-start="520" selection-end="520" vertical-scroll-proportion="-15.405405" vertical-offset="0" max-vertical-offset="6930">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles-css.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/styles-css.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="7" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.6507592" vertical-offset="1260" max-vertical-offset="9450">
+              <folding>
+                <element signature="e#7#151#0" expanded="true" />
+                <marker date="1389552455865" expanded="true" signature="8416:8968" placeholder="..." />
+                <marker date="1389552455865" expanded="true" signature="9026:9082" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,20 +78,8 @@
       <file leaf-file-name="jf-base.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jf-base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="35" selection-start="833" selection-end="833" vertical-scroll-proportion="-8.810811" vertical-offset="874" max-vertical-offset="32490">
+            <state line="48" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="119.189186" vertical-offset="5850" max-vertical-offset="32490">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles-css.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles-css.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="40" selection-start="2012" selection-end="2012" vertical-scroll-proportion="-8.810811" vertical-offset="1114" max-vertical-offset="9300">
-              <folding>
-                <marker date="1389547384395" expanded="true" signature="8419:8981" placeholder="..." />
-                <marker date="1389547384395" expanded="true" signature="9043:9102" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -219,9 +142,9 @@
         <option value="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
         <option value="$PROJECT_DIR$/templateDetails.xml" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/css/styles-css.php" />
         <option value="$PROJECT_DIR$/css/jf-base.less" />
         <option value="$PROJECT_DIR$/css/jf-layout.less" />
+        <option value="$PROJECT_DIR$/css/styles-css.php" />
       </list>
     </option>
   </component>
@@ -356,6 +279,24 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\Johannes Hock\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5c26cc59-147d-4905-8287-b2e1c6f93e3b" name="Default" comment="" />
@@ -481,7 +422,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="41" selection-start="11165" selection-end="11165" vertical-scroll-proportion="-45.51351" vertical-offset="4976" max-vertical-offset="13800">
+        <state line="184" column="10" selection-start="8521" selection-end="8521" vertical-scroll-proportion="181.83784" vertical-offset="12248" max-vertical-offset="13800">
           <folding>
             <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -492,34 +433,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="275" column="51" selection-start="4472" selection-end="4472" vertical-scroll-proportion="-12.351352" vertical-offset="7793" max-vertical-offset="49440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="29" selection-start="1071" selection-end="1077" vertical-scroll-proportion="-10.540541" vertical-offset="720" max-vertical-offset="6930">
+        <state line="19" column="5" selection-start="520" selection-end="520" vertical-scroll-proportion="-15.405405" vertical-offset="0" max-vertical-offset="6930">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="833" selection-end="833" vertical-scroll-proportion="-8.810811" vertical-offset="874" max-vertical-offset="32490">
+        <state line="48" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="119.189186" vertical-offset="5850" max-vertical-offset="32490">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles-css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="40" selection-start="2012" selection-end="2012" vertical-scroll-proportion="-8.810811" vertical-offset="1114" max-vertical-offset="9300">
+        <state line="22" column="7" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.6507592" vertical-offset="1260" max-vertical-offset="9450">
           <folding>
-            <marker date="1389547384395" expanded="true" signature="8419:8981" placeholder="..." />
-            <marker date="1389547384395" expanded="true" signature="9043:9102" placeholder="..." />
+            <element signature="e#7#151#0" expanded="true" />
+            <marker date="1389552455865" expanded="true" signature="8416:8968" placeholder="..." />
+            <marker date="1389552455865" expanded="true" signature="9026:9082" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="556" column="21" selection-start="9243" selection-end="9243" vertical-scroll-proportion="0.72342736" vertical-offset="16013" max-vertical-offset="49560">
-          <folding />
         </state>
       </provider>
     </entry>
