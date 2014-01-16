@@ -78,7 +78,6 @@
                 <field name="TPL_JF3_FIELD_SPACER_HEADCOLOR_DESC" type="spacer" hr="false" />
                 <field name="headercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_HRCOLOR_LABEL" description="TPL_JF3_FIELD_HRCOLOR_DESC" size="7" class="color" ></field>
                 <field name="footercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_FRCOLOR_LABEL" description="TPL_JF3_FIELD_FRCOLOR_DESC" size="7" class="color" ></field>
-                <field name="headerbordercolor" type="color" default="#aaaaaa" label="TPL_JF3_FIELD_HRBCOLOR_LABEL" description="TPL_JF3_FIELD_HRBCOLOR_DESC" size="7" class="color" ></field>
                 <field name="headrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_HROWCOLOR_LABEL" description="TPL_JF3_FIELD_HROWCOLOR_DESC" size="7" class="color" ></field>
                 <field name="bottomrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_BROWCOLOR_LABEL" description="TPL_JF3_FIELD_BROWCOLOR_DESC" size="7" class="color" ></field>
                 <field name="TPL_JF3_FIELD_SPACER_TITLECOLOR_DESC" type="spacer" hr="false" />
@@ -90,19 +89,12 @@
                 <field name="headerbackimage" type="media" label="TPL_JF3_FIELD_HBIMAGE_LABEL" description="TPL_JF3_FIELD_HBIMAGE_DESC" />
                 <field name="TPL_JF3_FIELD_SPACER_HEADERSIDE_DESC" type="spacer" hr="false" />
                 <field name="headerlogo" type="media" label="TPL_JF3_FIELD_HLOGO_LABEL" description="TPL_JF3_FIELD_HLOGO_DESC" />
-                <field name="TPL_JF3_FIELD_SPACER_HEADERTEXT_DESC" type="spacer" hr="false" />
-                <field name="logotype" type="radio" default="0" label="TPL_JF3_FIELD_LOGOTYPE_LABEL" description="TPL_JF3_FIELD_LOGOTYPE_DESC">
-                    <option value="0">Text</option>
-                    <option value="1">Image</option>
-                </field>
+                <field name="sitetitle" type="text" default="JFlex" label="TPL_JF3_FIELD_SITETITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC" filter="string" />
                 <field name="TPL_JF3_FIELD_SPACER_LOGOHTEXT_DESC" type="spacer" hr="false" />
                 <field name="maintitle" type="text" default="~JFlex~" label="TPL_JF3_FIELD_MAINTITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC" filter="string" />
                 <field name="subtitle" type="text" default="RWD Joomla! Template" label="TPL_JF3_FIELD_SUBTITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC"  filter="string"  />
-                <field name="TPL_JF3_FIELD_SPACER_LOGO_DESC" type="spacer" hr="false" />
-                <field name="logo" type="media" label="TPL_JF3_FIELD_LOGO_LABEL" description="TPL_JF3_FIELD_LOGO_DESC" />
-                <field name="sitetitle" type="text" default="" label="TPL_JF3_FIELD_SITETITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC" filter="string" />
+                <field name="TPL_JF3_FIELD_SPACER_PAGEBG_DESC" type="spacer" hr="false" />
                 <field name="bodybackground" type="media" label="TPL_JF3_FIELD_BACKIMAGE_LABEL" description="TPL_JF3_FIELD_BACKIMAGE_DESC" />
-
             </fieldset>
             <fieldset name="FONTS">
                 <field name="TPL_JF3_FIELD_SPACER_FONTFONT_DESC" type="spacer" hr="false" />

@@ -6,6 +6,10 @@
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined( '_JEXEC' ) or die( 'Restricted access' );
+
+// get my params
+$headerlogo = $this->params->get('headerlogo');
+$sitetitle = $this->params->get('sitetitle');
 ?>
 
 <!doctype html>
@@ -13,13 +17,16 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="language" content="<?php echo $this->language; ?>" />
 <title><?php echo $this->error->getCode(); ?>-<?php echo $this->title; ?></title>
+
 <?php if ($this->error->getCode()>=400 && $this->error->getCode() < 500) { 	?>
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/base.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/layout.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jf-template.css" type="text/css" media="screen" />
 </head>
 
 <body class="contentpane">
-<div class="headerlogo"> <a href="<?php echo $this->baseurl ?>" id="logo"> <IMG src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" alt="joomflex"> </a></div>
+
+<?php if ($headerlogo): ?>
+    <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>"> <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
+<?php endif;?>
 
 <!-- *****    Error Message Begins   ******** -->
 <div class="row" style="margin-left:10px">

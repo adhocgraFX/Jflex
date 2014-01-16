@@ -28,16 +28,15 @@ $doc->addStyleSheet($tpath.'/css/jf-template.css');
 $doc->addScript($tpath.'/js/modernizr-2.6.2-respond-1.1.0.min.js');
 
 // get my params
-$logo = $this->params->get('logo');
-$logotype = $this->params->get('logotype');
+$headfont = $this->params->get('headfont');
+$bodyfont = $this->params->get('bodyfont');
+$headerlogo = $this->params->get('headerlogo');
 $sitetitle = $this->params->get('sitetitle');
 $analytics = $this->params->get('analytics');
 $anonym = $this->params->get('anonym');
 $typesize = $this->params->get('typesize');
 $maintitle = $this->params->get('maintitle');
 $subtitle = $this->params->get('subtitle');
-$headfont = $this->params->get('headfont');
-$bodyfont = $this->params->get('bodyfont');
 $textindent = $this->params->get('textindent');
 
 // Add Joomla! JavaScript Frameworks
@@ -58,8 +57,16 @@ $user = JFactory::getUser();
 <html lang="<?php echo $this->language; ?>" class="no-js" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
 
 <head>
+<!-- fonts -->
+<?php if ($headfont != "default"): ?>
+    <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($headfont); ?>.js"></script>
+<?php endif;?>
+<?php if ($bodyfont != "default"): ?>
+    <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($bodyfont); ?>.js"></script>
+<?php endif;?>
+
 <?php if ($layout != 'desktop'):?>
-<!-- ...bildverkleinerung über mobify cdn... -->
+<!-- bildverkleinerung über mobify cdn -->
 <script>!function(a,b,c,d,e){function g(a,c,d,e){var f=b.getElementsByTagName("script")[0];a.src=e,a.id=c,a.setAttribute("class",d),f.parentNode.insertBefore(a,f)}a.Mobify={points:[+new Date]};var f=/((; )|#|&|^)mobify=(\d)/.exec(location.hash+"; "+b.cookie);if(f&&f[3]){if(!+f[3])return}else if(!c())return;b.write('<plaintext style="display:none">'),setTimeout(function(){var c=a.Mobify=a.Mobify||{};c.capturing=!0;var f=b.createElement("script"),h="mobify",i=function(){var c=new Date;c.setTime(c.getTime()+3e5),b.cookie="mobify=0; expires="+c.toGMTString()+"; path=/",a.location=a.location.href};f.onload=function(){if(e)if("string"==typeof e){var c=b.createElement("script");c.onerror=i,g(c,"main-executable",h,mainUrl)}else a.Mobify.mainExecutable=e.toString(),e()},f.onerror=i,g(f,"mobify-js",h,d)})}(window,document,function(){var a=/webkit|msie\s10|(firefox)[\/\s](\d+)|(opera)[\s\S]*version[\/\s](\d+)|3ds/i.exec(navigator.userAgent);return a?a[1]&&+a[2]<4?!1:a[3]&&+a[4]<11?!1:!0:!1},
 // path to mobify.js
 "//cdn.mobify.com/mobifyjs/build/mobify-2.0.0.min.js",
@@ -86,14 +93,6 @@ function() {
 <meta name="HandheldFriendly" content="true" />
 <meta name="apple-touch-fullscreen" content="YES" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-<!-- add font tag -->
-<?php if ($headfont != "default"): ?>
-    <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($headfont); ?>.js"></script>
-<?php endif;?>
-<?php if ($bodyfont != "default"): ?>
-    <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($bodyfont); ?>.js"></script>
-<?php endif;?>
 
 <!-- load css options -->
 <?php include_once ('css/styles-css.php'); ?>
@@ -132,16 +131,15 @@ function() {
 			    </div>
             <?php endif;?>
 
-            <!-- logo  -->
-            <?php if ($logotype == '1'): ?>
-                <?php if ($logo): ?>
-                    <div class="headerlogo stickem"> <a href="<?php echo $this->baseurl ?>"> <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
-                <?php else : ?>
-                    <div class="headerlogo stickem"> <a href="<?php echo $this->baseurl ?>"> <IMG src="<?php echo $tpath; ?>/images/logo.png" alt="JFlex" /> </a> </div>
+            <!-- seitliches logobild  -->
+            <?php if ($headerlogo): ?>
+                <?php if ($layout != 'mobile'):?>
+                    <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>"> <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
                 <?php endif;?>
-            <?php elseif ($logotype == '0'): ?>
-                <div class="headerlogo stickem"> <a href="<?php echo $this->baseurl ?>"><h1 class="logotext-top"><?php echo htmlspecialchars($maintitle); ?></h1><h1 class="logotext-sub"><?php echo htmlspecialchars($subtitle); ?></h1> </a> </div>
             <?php endif;?>
+
+            <!-- logotext  -->
+            <div class="logotext stickem"> <a href="<?php echo $this->baseurl ?>"><h1 class="logotext-top"><?php echo htmlspecialchars($maintitle); ?></h1><h1 class="logotext-sub"><?php echo htmlspecialchars($subtitle); ?></h1> </a> </div>
 
             <!-- slideshow -->
             <?php if ($layout != 'mobile'):?>
@@ -268,15 +266,16 @@ function() {
 <!-- debug -->
 <jdoc:include type="modules" name="debug" />
 
-<!--  load scripts  -->
+<!--  load scripts -->
 <?php if ($layout != 'mobile'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js';?>"></script>
+<script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js';?>"></script>
 <?php elseif ($layout == 'mobile'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js';?>"></script>
+<script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js';?>"></script>
 <?php endif; ?>
 
 <!-- load plugin scripts -->
 <script type="text/javascript">
+
 //  Avoid `console` errors in browsers that lack a console.
     (function() {
         var method;
@@ -313,7 +312,7 @@ function() {
     jQuery(window).load(function(){
         jQuery('.equal-1 .module-body').syncHeight({ 'updateOnResize': true});
         jQuery(window).resize(function(){
-            if(jQuery(window).width() < 760){
+            if(jQuery(window).width() < 753){
                 jQuery('.equal-1 .module-body').unSyncHeight();
             }
         });
@@ -321,7 +320,7 @@ function() {
     jQuery(window).load(function(){
         jQuery('.equal-2 .module-body').syncHeight({ 'updateOnResize': true});
         jQuery(window).resize(function(){
-            if(jQuery(window).width() < 760){
+            if(jQuery(window).width() < 753){
                 jQuery('.equal-2 .module-body').unSyncHeight();
             }
         });
@@ -329,7 +328,7 @@ function() {
 jQuery(window).load(function(){
     jQuery('.equal-3 .module-body').syncHeight({ 'updateOnResize': true});
     jQuery(window).resize(function(){
-        if(jQuery(window).width() < 760){
+        if(jQuery(window).width() < 753){
             jQuery('.equal-3 .module-body').unSyncHeight();
         }
     });
@@ -337,7 +336,7 @@ jQuery(window).load(function(){
 jQuery(window).load(function(){
     jQuery('.equal-4 .module-body').syncHeight({ 'updateOnResize': true});
     jQuery(window).resize(function(){
-        if(jQuery(window).width() < 760){
+        if(jQuery(window).width() < 753){
             jQuery('.equal-4 .module-body').unSyncHeight();
         }
     });

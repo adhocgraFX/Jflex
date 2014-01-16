@@ -15,7 +15,7 @@
 /* media queries
 ======================================================== */
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 47em) {
 
   .breadcrumb li:first-child, .breadcrumb li:last-child, .breadcrumb li a {
     padding: .5em;
@@ -85,7 +85,7 @@
   padding: 1em;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47em) {
 
   section[role ="main"] {
     width: 61.8%; /* goldener Schnitt */
@@ -144,6 +144,14 @@ footer, .copy-pad {
   padding: 1em;
 }
 
+section {
+
+  &.head-row, &.bottom-row {
+    background: inherit;
+    padding: 1em 1em 0 1em;
+  }
+}
+
 .copy-pad {
 
   a {
@@ -167,34 +175,55 @@ footer, .copy-pad {
     }
   }
 }
+header {
 
-.headerlogo {
-  padding: .25em 0;
-
-  a {
-    width: 100%;
-    background: transparent;
-    display: inline-block;
-    padding:0;
-    text-align: center;
-
-    img {
-	max-width: 100%;
-	height: auto;
-	position: relative;
-    }
-  }
-
-  h1.logotext-top {
-    font-size: 4.4em;
+  .headerlogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9em;
+    height: auto;
     margin: 0;
+    padding: 0;
+
+    a {
+	width: 100%;
+	background: transparent;
+	display: block;
+	padding:0;
+	text-align: left;
+
+	img {
+	  max-width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+    }
   }
 
-  h1.logotext-sub {
-    font-size: 2.1em;
-    margin-top: 0 !important;
-    margin-bottom: 1em;
+  .logotext {
+    padding: .25em 0;
+
+    a {
+	width: 100%;
+	background: transparent;
+	display: inline-block;
+	padding:0;
+	text-align: center;
     }
+
+    h1.logotext-top {
+	font-size: 4.4em;
+	margin: 0;
+    }
+
+    h1.logotext-sub {
+	font-size: 2.1em;
+	margin-top: 0 !important;
+	margin-bottom: 1em;
+    }
+  }
+
 }
 
 // good old contentpane
@@ -1462,10 +1491,6 @@ input[type="color"],
     border-color: @concrete;
     .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0,0,0,.25)");
   }
-}
-// fluid rows adaptions
-.row-fluid {
-  padding: 1em 1em 0 1em;
 }
 
 // first left module in second, third, ... row

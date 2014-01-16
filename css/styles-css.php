@@ -17,19 +17,15 @@
 	$tabbackground = $this->params->get('tabcolor');
 	$tabtext = $this->params->get('tabtextcolor');
     $headerColor = $this->params->get('headercolor');
-    $headerborderColor = $this->params->get('headerbordercolor');
     $footerColor = $this->params->get('footercolor');
     $hrowColor = $this->params->get('headrowcolor');
     $browColor = $this->params->get('bottomrowcolor');
-    $headerlogo = $this->params->get('headerlogo');
     $headerbackimage = $this->params->get('headerbackimage');
     $maintitleColor = $this->params->get('mtcolor');
     $subtitleColor = $this->params->get('stcolor');
     $maxwidth = $this->params->get('maxwidth');
     $wunit = $this->params->get('wunit');
-	$headfont = $this->params->get('headfont');
-	$bodyfont = $this->params->get('bodyfont');
-    $basefontsize = $this->params->get('basefontsize');
+	$basefontsize = $this->params->get('basefontsize');
     $textindent = $this->params->get('textindent');
 ?>
 
@@ -37,18 +33,21 @@
 h1, h2, h3, h4, h5, h6, p.lead, p.bildlegende, p.autor, blockquote {
  	color: <?php echo $headlineColor;?> !important;
 }
-	<?php if ($headfont != "default"):?>
-		h1, h2, h3, h4, h5, h6 {
-			font-family: <?php echo htmlspecialchars($headfont); ?>, Helvetica, Arial, sans-serif; }
-	<?php endif;?>
+<?php if ($headfont != "default"):?>
+	h1, h2, h3, h4, h5, h6 {
+		font-family: <?php echo htmlspecialchars($headfont); ?>, Helvetica, Arial, sans-serif; }
+<?php endif;?>
 
-    body {font-size: <?php echo $basefontsize;?>%;}
-@media screen and (min-width: 48em) {
+body {font-size: <?php echo $basefontsize;?>%;}
+
+@media screen and (min-width: 47em) {
     body {font-size: <?php echo $basefontsize * 1.125;?>%;}
 }
+
 @media screen and (min-width: 80em) {
     body {font-size: <?php echo $basefontsize * 1.25;?>%;}
 }
+
 body  {
     color: <?php echo $fontColor;?> !important;
  	<?php if ($bodyfont != "default"): ?>
@@ -63,6 +62,7 @@ body  {
 	    <?php endif;?>
     <?php endif;?>
 }
+
 <?php if ($bodyfont != "default"): ?>
 	.btn, dl.tabs h3, .panel h3.title  {
 		font-family: <?php echo htmlspecialchars($bodyfont); ?>, Helvetica, Arial, sans-serif;
@@ -88,49 +88,19 @@ footer {
 
 header {
     background-color: <?php echo $headerColor;?>;
-    border-bottom: .5em solid <?php echo $headerborderColor;?>;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47em) {
     header {
-        background-color: <?php echo $headerColor;?>;
-
         <?php if ($headerbackimage): ?>
-            background-image: url("<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"), url("<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerbackimage); ?>");
-            background-position: left bottom, center center;
-            background-repeat: no-repeat, no-repeat;
-
-            <?php if ($this->countModules('slideshow')):?>
-                -webkit-background-size: auto 240px, 100% 100%;
-                -moz-background-size: auto 240px, 100% 100%;
-                -o-background-size: auto 240px, 100% 100%;
-                background-size: auto 240px, 100% 100%;
-            <?php else : ?>
-                -webkit-background-size: auto 75%, 100% 100%;
-                -moz-background-size: auto 75%, 100% 100%;
-                -o-background-size: auto 75%, 100% 100%;
-                background-size: auto 75%, 100% 100%;
-            <?php endif; ?>
-
-        <?php else : ?>
-            background-image: url("<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>");
-            background-position: left bottom;
+            background-image: url("<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerbackimage); ?>");
+            background-position: center center;
             background-repeat: no-repeat;
-
-            <?php if ($this->countModules('slideshow')):?>
-                -webkit-background-size: auto 240px;
-                -moz-background-size: auto 240px;
-                -o-background-size: auto 240px;
-                background-size: auto 240px;
-            <?php else : ?>
-                -webkit-background-size: auto 75%;
-                -moz-background-size: auto 75%;
-                -o-background-size: auto 75%;
-                background-size: auto 75%;
-            <?php endif; ?>
+            -webkit-background-size:100% 100%;
+            -moz-background-size:100% 100%;
+            -o-background-size:100% 100%;
+            background-size:100% 100%;
         <?php endif; ?>
-
-        border-bottom: .5em solid <?php echo $headerborderColor;?>;
     }
 }
 
@@ -144,7 +114,7 @@ h1.logotext-sub {
 <?php if ($bodybackground): ?>
 	#outer-wrapper { background: transparent; }
 	@media screen and (max-width: 48em) {
-	#outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
+	    #outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
 	}
 <?php else : ?>
 	#outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
@@ -196,7 +166,7 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
 
 /* jquery stickem */
 <?php if ($layout == 'desktop'):?>
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 47em) {
         .stickem-container {
             position: relative;
         }
@@ -205,23 +175,15 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
             top: 0;
             margin: 0;
         }
-        .headerlogo.stickem.stickit {
+        .logotext.stickem.stickit {
             z-index: 9999;
             width: 200px;
         }
-        .headerlogo.stickem.stickit a h1.logotext-top {
+        .logotext.stickem.stickit a h1.logotext-top {
             font-size: 1.7em;
         }
-        .headerlogo.stickem.stickit a h1.logotext-sub {
+        .logotext.stickem.stickit a h1.logotext-sub {
             font-size: .82em;
-        }
-
-        .headerlogo.stickem.stickit a img{
-            padding-top: 0px;
-            width: 80%;
-            height: auto;
-            left: 5px;
-            float: left;
         }
 
         .nav-close-pad.stickem.stickit {
@@ -259,7 +221,7 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
     }
 
     @media screen and (min-width: 80em) {
-        .headerlogo.stickem.stickit {
+        .logotext.stickem.stickit {
             width: 220px;
         }
         .nav-module-pad.stickem.stickit {

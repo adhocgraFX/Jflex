@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c26cc59-147d-4905-8287-b2e1c6f93e3b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component.php" afterPath="$PROJECT_DIR$/component.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" afterPath="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" afterPath="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/error.php" afterPath="$PROJECT_DIR$/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-layout.less" afterPath="$PROJECT_DIR$/css/jf-layout.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-off-canvas.less" afterPath="$PROJECT_DIR$/css/jf-off-canvas.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.css" afterPath="$PROJECT_DIR$/css/jf-template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-css.php" afterPath="$PROJECT_DIR$/css/styles-css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templateDetails.xml" afterPath="$PROJECT_DIR$/templateDetails.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jflex.iws" />
@@ -29,83 +37,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="10" selection-start="8521" selection-end="8521" vertical-scroll-proportion="181.83784" vertical-offset="12248" max-vertical-offset="13800">
+            <state line="59" column="0" selection-start="2210" selection-end="2210" vertical-scroll-proportion="1.9197397" vertical-offset="0" max-vertical-offset="13770">
               <folding>
+                <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#2;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#2;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1389546326055" expanded="false" signature="2661:2673" placeholder="..." />
+                <marker date="1389871197792" expanded="false" signature="2943:2955" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jf-layout.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+      <file leaf-file-name="template.desktop.js.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="275" column="51" selection-start="4472" selection-end="4472" vertical-scroll-proportion="-12.351352" vertical-offset="7793" max-vertical-offset="49440">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-variables.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="520" selection-end="520" vertical-scroll-proportion="-15.405405" vertical-offset="0" max-vertical-offset="6930">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles-css.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/styles-css.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="7" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.6507592" vertical-offset="1260" max-vertical-offset="9450">
-              <folding>
-                <element signature="e#7#151#0" expanded="true" />
-                <marker date="1389552455865" expanded="true" signature="8416:8968" placeholder="..." />
-                <marker date="1389552455865" expanded="true" signature="9026:9082" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-base.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-base.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="119.189186" vertical-offset="5850" max-vertical-offset="32490">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="templateDetails.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templateDetails.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="4753" selection-end="4753" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="5610">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en-GB.tpl_jflex_j3.ini" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="36" selection-start="1557" selection-end="1748" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="de-DE.tpl_jflex_j3.ini" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="48" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1110">
               <folding />
             </state>
           </provider>
@@ -129,22 +85,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/pocketgrid.css" />
-        <option value="$PROJECT_DIR$/css/jf-pocketgrid.less" />
-        <option value="$PROJECT_DIR$/css/jf-template.less" />
-        <option value="$PROJECT_DIR$/css/jf-off-canvas.less" />
-        <option value="$PROJECT_DIR$/css/jf-variables.less" />
-        <option value="$PROJECT_DIR$/js/template.mobile.js" />
-        <option value="$PROJECT_DIR$/js/jquery.stickem.min.js" />
         <option value="$PROJECT_DIR$/js/template.desktop.js" />
         <option value="$PROJECT_DIR$/css/jf-buttons.less" />
-        <option value="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
-        <option value="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
-        <option value="$PROJECT_DIR$/templateDetails.xml" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/jf-base.less" />
-        <option value="$PROJECT_DIR$/css/jf-layout.less" />
+        <option value="$PROJECT_DIR$/error.php" />
+        <option value="$PROJECT_DIR$/component.php" />
+        <option value="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
+        <option value="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
+        <option value="$PROJECT_DIR$/templateDetails.xml" />
+        <option value="$PROJECT_DIR$/css/jf-off-canvas.less" />
         <option value="$PROJECT_DIR$/css/styles-css.php" />
+        <option value="$PROJECT_DIR$/css/jf-layout.less" />
+        <option value="$PROJECT_DIR$/js/lazyload.js" />
+        <option value="$PROJECT_DIR$/js/t.desktop.js" />
+        <option value="$PROJECT_DIR$/js/t.mobile.js" />
+        <option value="$PROJECT_DIR$/js/head.min.js" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -186,6 +142,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,22 +185,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Subversion" />
+    <property name="options.lastSelected" value="settings" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="flex3" serverId="ea60764c-b590-4cff-8124-bee11d3b5490">
     <servers>
@@ -309,25 +265,45 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15024875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17024705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19656284" sideWeight="0.84975123" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2803437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15306123" sideWeight="0.84975123" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15024875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15024875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2803437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16111708" sideWeight="0.84975123" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -341,126 +317,110 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery.stickem.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5520">
+        <state line="274" column="0" selection-start="12845" selection-end="12845" vertical-scroll-proportion="0.0" vertical-offset="7672" max-vertical-offset="13770">
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#2;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#2;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1389871197792" expanded="false" signature="2943:2955" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/responsive.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.486631" vertical-offset="175" max-vertical-offset="1110">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.75523704" vertical-offset="685" max-vertical-offset="1620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/responsive-767px-max.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="18" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.4340045" vertical-offset="1442" max-vertical-offset="5970" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/grid.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/responsive-utilities.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1008676" vertical-offset="1015" max-vertical-offset="1950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/responsive-768px-979px.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.3329718" vertical-offset="2273" max-vertical-offset="20790" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles-css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="18" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.34924078" vertical-offset="1868" max-vertical-offset="8190">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="0" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.32321042" vertical-offset="4082" max-vertical-offset="50190" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/template.desktop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="11634" selection-end="11634" vertical-scroll-proportion="0.18769552" vertical-offset="0" max-vertical-offset="959">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="959">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/template.mobile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="11648" selection-end="11648" vertical-scroll-proportion="0.2189781" vertical-offset="0" max-vertical-offset="959">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="959">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/buttons.less">
+    <entry file="file://$PROJECT_DIR$/js/template.mobile.js.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2548807" vertical-offset="3001" max-vertical-offset="7020">
+        <state line="18" column="18" selection-start="749" selection-end="749" vertical-scroll-proportion="0.39045554" vertical-offset="0" max-vertical-offset="922">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/mixins.less">
+    <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="354" selection-end="354" vertical-scroll-proportion="-1.1713666" vertical-offset="1620" max-vertical-offset="21240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-2/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="48" selection-start="7382" selection-end="7421" vertical-scroll-proportion="0.47939262" vertical-offset="6938" max-vertical-offset="9210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-buttons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="25" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-12.162162" vertical-offset="1260" max-vertical-offset="6780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="1557" selection-end="1748" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="48" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templateDetails.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="4753" selection-end="4753" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="5610">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="10" selection-start="8521" selection-end="8521" vertical-scroll-proportion="181.83784" vertical-offset="12248" max-vertical-offset="13800">
+        <state line="59" column="0" selection-start="2210" selection-end="2210" vertical-scroll-proportion="1.9197397" vertical-offset="0" max-vertical-offset="13770">
           <folding>
+            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#2;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#2;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1389546326055" expanded="false" signature="2661:2673" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="51" selection-start="4472" selection-end="4472" vertical-scroll-proportion="-12.351352" vertical-offset="7793" max-vertical-offset="49440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="520" selection-end="520" vertical-scroll-proportion="-15.405405" vertical-offset="0" max-vertical-offset="6930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="119.189186" vertical-offset="5850" max-vertical-offset="32490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles-css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="833" selection-end="833" vertical-scroll-proportion="-0.6507592" vertical-offset="1260" max-vertical-offset="9450">
-          <folding>
-            <element signature="e#7#151#0" expanded="true" />
-            <marker date="1389552455865" expanded="true" signature="8416:8968" placeholder="..." />
-            <marker date="1389552455865" expanded="true" signature="9026:9082" placeholder="..." />
+            <marker date="1389871197792" expanded="false" signature="2943:2955" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -13,7 +13,7 @@
 defined('_JEXEC') or die;
 
 // get my params
-$logo = $this->params->get('logo');
+$headerlogo = $this->params->get('headerlogo');
 $sitetitle = $this->params->get('sitetitle');
 ?>
 
@@ -27,14 +27,16 @@ $sitetitle = $this->params->get('sitetitle');
         <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jf-print.css" type="text/css" media="print" />
     </head>
     <body class="contentpane">
-    <?php if ($logo): ?>
-        <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>" id="logo" > <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
-    <?php else : ?>
-        <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>" id="logo" > <IMG src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" alt="JFlex" /> </a> </div>
-    <?php endif;?>
+    <header>
+        <?php if ($headerlogo): ?>
+            <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>"> <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
+        <?php endif;?>
+    </header>
     <jdoc:include type="message" />
     <jdoc:include type="component" />
-    <div id="copy-pad"><p>JFlex | 2014 | adhocgraFX | &copy; | alle Rechte vorbehalten</p></div>
+    <footer>
+        <div id="copy-pad"><p>JFlex | 2014 | adhocgraFX | &copy; | alle Rechte vorbehalten</p></div>
+    </footer>
     </body>
     </html>
 <?php endif; ?>
