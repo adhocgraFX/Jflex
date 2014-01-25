@@ -20,7 +20,7 @@
   .breadcrumb li:first-child, .breadcrumb li:last-child, .breadcrumb li a {
     padding: .5em;
   }
-
+	// bootstrap im category blog
   // lösung für Spaltensatz > nur eine spalte zulassen
   .row-fluid {
     [class*="span"] {
@@ -94,7 +94,6 @@
   aside[role="complementary"] {
     width: 38.2%; /* goldener Schnitt */
   }
-
 }
 
 // #Joomla! Styles = classes and ids for Joomla! specific views
@@ -305,19 +304,27 @@ header {
 // modulfarben allgemein  -  grau- und schwarzwerte
 .white {
   .module-body {
-    border-bottom: .5em solid @gainsboroDark;
+    border-bottom: .5em solid @gainsboroLight;
   }
   .module-title {
-    background: darken(@gainsboroDarker, 10%);
+    background: @gainsboro;
+
+    h4.title {
+	color: @concreteDarker !important;
+    }
   }
 }
 
 .clouds {
   .module-body {
-    border-bottom: .5em solid @cloudsDark;
+    border-bottom: .5em solid @clouds;
   }
   .module-title {
-    background: darken(@cloudsDark, 10%);
+    background: @cloudsDark;
+
+    h4.title {
+	color: @concreteDarker !important;
+    }
   }
 }
 
@@ -413,7 +420,7 @@ header {
     padding: .5em 0;
 
     h4.title {
-	color: darken(@concreteDark, 10%)  !important;
+	color: @concreteDarker  !important;
     }
   }
 
@@ -429,7 +436,7 @@ header {
         display: block;
         padding: .5em 1em;
         font-weight: normal;
-        color: @midnightblueDark;
+        color: @concreteDarker;
         background: @cloudsDark;
         .border-radius(@baseBorderRadius);
         border: 1px solid @concrete;
@@ -464,20 +471,20 @@ header {
 	  margin: 0 !important;
 
 	  a {
-	    color: @grayDark;
+	    color: @concreteDark;
 	    display: block;
 	    padding: .5em 1em;
 	    border-bottom: 1px solid @gainsboroLight;
 
 	    &:hover {
-	      color: @grayDark;
-	  	background: @gainsboroDark !important;
+	      color: @concreteDarker;
+	  	background: @cloudsDark !important;
 	  	text-decoration: none !important;
 	    }
 
 	    &:focus, &:active, .active {
-	  	color: @smoke;
-	  	background: @gainsboroDarker !important;
+	  	color: @whitesmoke;
+	  	background: @concrete !important;
 	    }
 	  }
 
@@ -501,7 +508,7 @@ header {
   }
 
   .accordion-inner ul {
-    background: @gainsboroLight;
+    background: @clouds;
   }
 
   .accordion-heading .accordion-toggle {
@@ -510,22 +517,22 @@ header {
 
   a.accordion-toggle {
     text-decoration: none !important;
-    color: @grayDark !important;
+    color: @concreteDark !important;
 
     &:hover {
-	color: @grayDark;
-	background: @gainsboroDark !important;
+	color: @white;
+	background: @cloudsDark !important;
     }
 
     &:focus, &:active, .active {
-	color: @smoke !important;
-	background: @gainsboroDarker !important;
+	color: @whitesmoke !important;
+	background: @concrete !important;
     }
 
     &.accordion-parent.even {
 	text-decoration: none !important;
-	color: @smoke !important;
-	background: @jugfuldablueDark !important;
+	color: @concreteDarker !important;
+	background: @cloudsDark !important;
 
 	&:before {
 	  font-family: FontAwesome;
@@ -548,13 +555,13 @@ header {
 	}
 
 	&:hover {
-	  color: @smoke !important;
-	  background: @jugfuldablue !important;
+	  color: @whitesmoke !important;
+	  background: @concrete !important;
 	}
 
 	&:focus, &:active {
-	  color: @smoke;
-	  background: @jugfuldablueDarker !important;
+	  color: @whitesmoke;
+	  background: @concreteDark !important;
 	}
     }
   }
@@ -608,34 +615,31 @@ header {
   .btn {
     margin: 0;
     .border-right-radius(@baseBorderRadius);
-    height: 3em /*@inputHeight + 1.5px*/;
+    height: 3em;
+    // @inputHeight + 1.5px;
     padding: .5em 1em;
     width: 4em;
   }
 
   .inputboxsearch-style {
-    //width: 210px;
-    width: -webkit-calc(100% (- 4em));
-    width: -moz-calc(100% (- 4em));
-    width: calc(100% (- 4em));
-    height: 3em /*@inputHeight + 1.5px*/;
+    // width: 210px;
+    width: 70%;
+    max-width: 70%;
+    height: 3em;
+    // @inputHeight + 1.5px;
     .border-left-radius(@baseBorderRadius);
     .border-right-radius(0px);
-    .no-csscalc {
-	width: 75%;
-	max-width: 75%;
-    }
   }
 }
 
 // text-resizer
-#textsizer-embed {
+#textsizer-embed, ul.social-buttons {
   margin: 0;
   background: transparent;
   font-size: .875em;
 }
 
-ul.textresizer, ul.actions {
+ul.textresizer, ul.actions, ul.social-buttons {
   width: 100%;
   line-height: 1.3;
   list-style-type: none;
@@ -657,29 +661,29 @@ ul.textresizer, ul.actions {
       text-decoration: none;
       margin-right: 1%;
       padding: .5em 0;
-	color: @gray;
-      background: @gainsboroLight;
+	color: @concreteDarker;
+      background: @cloudsDark;
       .border-radius(@baseBorderRadius);
 
       &:hover {
-        color: @grayDark;
-        background: @gainsboro;
+        color: @whitesmoke;
+        background: @concrete;
       }
 
       &:focus, &:active {
-        color: @smoke;
-        background: @gainsboroDark;
+        color: @whitesmoke;
+        background: @concreteDark;
       }
 
       &.textresizer-active {
-        color: @smoke;
-        background: @gainsboroDarker;
+        color: @whitesmoke;
+        background: @concreteDark;
       }
     }
   }
 }
 
-ul.actions li a {
+ul.actions li a  {
   float: right; // etwas blöd
   width: 32%; // nur 3 mal: print - mail - edit
 }
@@ -699,8 +703,8 @@ ul.mynav {
     list-style-type: none;
 
     a {
-      color: @white !important;
-      background: @cloudsDark;
+      color: @whitesmoke !important;
+      background: @concrete;
       .border-radius(20em);
       display: inline-block;
       font-size: 1.5em;
@@ -712,25 +716,25 @@ ul.mynav {
 
       &:hover {
         color: @whitesmoke;
-        background: @concrete;
+        background: @concreteDark;
       }
 
       &:active {
         color: @whitesmoke;
-        background: @concreteDark;
+        background: @concreteDarker;
       }
     }
   }
 }
 
 // breadcrumbs
-.breadcrumbs-pad, .textresizer-pad {
+.breadcrumbs-pad, .textresizer-pad, .social-buttons-pad {
   margin: 0;
   font-size: 1em;
   background: transparent;
 }
 
-.textresizer-pad {
+.textresizer-pad, .social-buttons-pad {
   text-align: center;
 }
 
@@ -760,18 +764,18 @@ ul.mynav {
     display: block;
     float: left;
     padding: .5em 1em;
-    color: @grayDark;
-    background: @gainsboroLight;
+    color: @concreteDarker;
+    background: @cloudsDark;
     .border-radius(@baseBorderRadius);
 
     &:hover {
-      color: @grayDark;
-      background: @gainsboro;
+      color: @whitesmoke;
+      background: @concrete;
     }
 
     &:focus, &:active {
-      color: @smoke;
-      background: @gainsboroDark;
+      color: @whitesmoke;
+      background: @concreteDark;
     }
   }
 
@@ -839,8 +843,8 @@ dl.article-info {
 .tags {
   padding: 0 0 1em 0;
 
-  .label {
-    color: @white;
+  a.label {
+    color: @concreteDarker;
     background: @cloudsDark;
     padding: .5em .5em .55em .5em;
     font-weight: normal;
@@ -848,20 +852,20 @@ dl.article-info {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
     border: 0 !important;
     .box-shadow(none);
-  }
 
-  a:hover {
-    color: @white;
-    background: @concrete;
-    border: 0 !important;
-    .box-shadow(none);
-  }
+    &:hover {
+	color: @whitesmoke;
+	background: @concrete;
+	border: 0 !important;
+	.box-shadow(none);
+    }
 
-  a:focus {
-    color: @white !important;
-    background: @concreteDark !important;
-    border: 0 !important;
-    .box-shadow(none);
+    &:focus, &:active {
+	color: @whitesmoke !important;
+	background: @concreteDark !important;
+	border: 0 !important;
+	.box-shadow(none);
+    }
   }
 }
 
@@ -937,17 +941,17 @@ ul.tabs {
 	}
 
 	&.linkclosed {
-	  color: @white;
-	  background: @cloudsDark;
+	  color: @whitesmoke;
+	  background: @concrete;
 
 	  &:hover {
 	    color: @whitesmoke;
-	    background: @concrete;
+	    background: @concreteDark;
 	  }
 
 	  &:focus, &:active {
 	    color: @whitesmoke;
-	    background: @concreteDark;
+	    background: @concreteDarker;
 	  }
 	}
     }
@@ -1057,8 +1061,8 @@ a.comments-link {
 }
 
 a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
-  color: @gray;
-  background: @gainsboroLight !important;
+  color: @concreteDarker;
+  background: @cloudsDark !important;
   .border-radius(@baseBorderRadius);
   padding: .5em 1em !important;
   display: block;
@@ -1073,15 +1077,15 @@ a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 
   &:hover {
-    color: @grayDark;
-    background: @gainsboro !important;
+    color: @whitesmoke;
+    background: @concrete !important;
     border: 0 !important;
     .box-shadow(none) !important;
   }
 
   &:focus, &:active {
-    color: @smoke;
-    background: @gainsboroDark !important;
+    color: @whitesmoke;
+    background: @concreteDark !important;
     border: 0 !important;
     .box-shadow(none) !important;
   }
@@ -1091,10 +1095,11 @@ a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
   float: right !important;
   margin: 0 0 .2em 0 !important;
 }
+// ende beez tabs
 
 .pager li a  {
-  color: @gray;
-  background: @whitesmoke !important;
+  color: @concreteDarker;
+  background: @cloudsDark !important;
   .border-radius(@baseBorderRadius);
   padding: .5em 1em !important;
   float: none;
@@ -1109,8 +1114,8 @@ a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 
   &:hover {
-    color: @gray;
-    background: @gainsboro !important;
+    color: @whitesmoke;
+    background: @concrete !important;
     border: 0 !important;
     .box-shadow(none)
     !important;
@@ -1118,7 +1123,7 @@ a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
 
   &:focus, &:active {
     color: @whitesmoke;
-    background: @gainsboroDark !important;
+    background: @concreteDark !important;
     border: 0 !important;
     .box-shadow(none)
     !important;
@@ -1136,7 +1141,6 @@ a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
 li.next:before {
   content: "";
 }
-// ende beez tabs
 
 //  readmore
 & + p.readmore {
@@ -1302,14 +1306,15 @@ dl.tabs {
     font-family: @baseFontFamily;
     line-height: 1.4;
     margin: 2px 0 !important;
-  }
 
-  h3 a {
-    color: @white;
-  }
+    a {
+	color: @whitesmoke;
 
-  h3 a:hover, h3 a:focus {
-    text-decoration: none !important;
+	&:hover, &:focus {
+	  color: @whitesmoke;
+	  text-decoration: none !important;
+	}
+    }
   }
 
   dt {
@@ -1334,18 +1339,18 @@ dl.tabs {
   }
 
   dt.closed {
-    color: @white;
-    background: @cloudsDark;
-  }
-
-  dt.closed:hover {
     color: @whitesmoke;
     background: @concrete;
   }
 
-  dt.closed:focus, dt.closed:active, dt.active a.closed {
+  dt.closed:hover {
     color: @whitesmoke;
     background: @concreteDark;
+  }
+
+  dt.closed:focus, dt.closed:active, dt.active a.closed {
+    color: @whitesmoke;
+    background: @concreteDarker;
   }
 }
 
@@ -1387,7 +1392,7 @@ div.current {
     line-height: 1.4;
     font-weight: normal;
     text-decoration: none !important;
-    color: @white;
+    color: @concreteDarker;
     background: @cloudsDark;
     .border-radius(@baseBorderRadius);
     border: 1px solid @grayLight;
@@ -1415,7 +1420,7 @@ div.current {
   .pane-down {
     padding: 1em !important;
     margin: -.25em 0 0 0;
-    background: @white;
+    background: @concreteDarker;
     .border-radius(@baseBorderRadius);
     border: solid 1px @cloudsDark !important;
     display: inline-block;

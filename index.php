@@ -215,7 +215,15 @@ function() {
                 <?php endif;?>
                 <jdoc:include type="modules" name="sidebar" style="joomskeleton"  />
                 <jdoc:include type="modules" name="sidebar_tabs" style="beezTabs" headerLevel="2"  id="3" />
-		    </aside>
+                <div class="social-buttons-pad" >
+                    <ul class="social-buttons">
+                        <li><a href="https://twitter.com/" target="_blank" title="twitter"><span class="icon-twitter icon-large"></span></a></li>
+                        <li><a href="https://plus.google.com/" target="_blank" title="google plus"><span class="icon-google-plus icon-large"></span></a></li>
+                        <li><a href="https://github.com/" target="_blank" title="github"><span class="icon-github icon-large"></span></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank" title="facebook"><span class="icon-facebook icon-large"></span></a></li>
+                    </ul>
+                </div>
+            </aside>
 		</section> <!-- content Rahmen -->
 
         <?php if ($layout == 'mobile'):?>
@@ -236,6 +244,7 @@ function() {
 
         <!-- footer -->
         <footer role="contentinfo" >
+            <!-- footer module -->
             <?php if ($this->countModules('footer')): ?>
 			    <jdoc:include type="modules" name="footer" style="joomskeleton" />
 		    <?php endif; ?>

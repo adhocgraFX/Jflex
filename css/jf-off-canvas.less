@@ -140,19 +140,14 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
       border-right: .3em solid transparent;
 
 	&:nth-child(1) a::before {
+	  font-family: FontAwesome;
+	  font-weight: normal;
+	  font-style: normal;
+	  line-height: 1;
+	  display: inline-block;
+	  text-decoration: inherit;
+	  padding-right: .5em;
 	  content: "\f015";
-	}
-
-	&:nth-child(2) a::before {
-	  content: "\f05a";
-	}
-
-	&:nth-child(3) a::before {
-	  content: "\f073";
-	}
-
-	&:nth-child(4) a::before {
-	  content: "\f003";
 	}
 
 	a {
@@ -160,39 +155,33 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
         padding: .5em 1em;
         margin: .25em 0;
         line-height: 1.5;
-        color: @smoke;
-	  background: @jugfuldablueDark;
+        color: @concreteDarker;
+	  background: @clouds;
         font-weight: normal;
 	  font-size: 1.125em;
-	  // font-size: 1em;
-        text-decoration: none;
+	  text-decoration: none;
         .border-radius(@baseBorderRadius);
 
         &:hover {
-          color: @white;
-          background: @jugfuldablue;
+          color: @whitesmoke;
+          background: @concrete;
         }
 
         &:active, &:focus {
-          color: @white;
-          background: @jugfuldablueDarker;
-	  }
-
-	  &::before {
-	    font-family: FontAwesome;
-	    font-weight: normal;
-	    font-style: normal;
-	    line-height: 1;
-	    display: inline-block;
-	    text-decoration: inherit;
-	    padding-right: .5em;
-	    content: "";
+          color: @whitesmoke;
+          background: @concreteDark;
 	  }
 	}
     }
 
     ul li ul {
       display: none;
+    }
+
+    ul li:hover ul li ul {
+	display: none;
+	padding: 0;
+	margin: 0;
     }
 
     ul li ul li {
@@ -214,7 +203,7 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
         padding: .3em 0;
         z-index: 99999999;
         background: @white;
-        border: 1px solid @jugfuldablueDark;
+        border: 1px solid @concreteDark;
         .border-radius(@baseBorderRadius);
         .box-shadow(@shadow);
       }
@@ -229,11 +218,14 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
       padding: .3em 0;
       z-index: 99999999;
       background: @white;
-      border: 1px solid @jugfuldablueDark;
+      border: 1px solid @concreteDark;
       .border-radius(@baseBorderRadius);
       .box-shadow(@shadow);
 
+
+
       li.active {
+	  // joomla active menü klasse
       }
 
       li a {
@@ -242,16 +234,18 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
         min-width: 14em;
         height: auto !important;
         .border-radius(0);
+	  color: @whitesmoke;
+	  background: @concrete;
 
-        &:hover {
-          color: @white;
-          background: @jugfuldablue;
+	  &:hover {
+          color: @whitesmoke;
+          background: @concreteDark;
           height: auto !important;
         }
 
         &:active, &:focus {
-          color: @white;
-          background: @jugfuldablueDarker;
+          color: @whitesmoke;
+          background: @concreteDarker;
           height: auto !important;
         }
 
@@ -261,59 +255,20 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
         }
       }
     }
-  }
 
-  //	3. ebene noch zu verbessern
-  #nav {
-    ul li:hover ul li ul {
-      display: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    ul li ul li ul li {
-      margin: 0 !important;
-      border-right: 0;
-      border-left: 0;
-      height: auto !important;
-    }
-
+    // 3. ebene
     ul li ul li:hover ul {
-      display: block;
-      position: absolute;
-      top: 1em;
-      left: 14em;
-      margin: 0;
-      padding: .3em 0;
-      z-index: 99999999;
-      background: @white;
-      border: 1px solid @jugfuldablueDark;
-      .border-radius(@baseBorderRadius);
-      .box-shadow(@shadow);
-
-      li.active {
-      }
-    }
-
-    ul li:hover ul li ul li a {
-      display: block;
-      text-align: left;
-      width: 14em;
-      min-width: 14em;
-      height: auto !important;
-      .border-radius(0);
-
-      &:hover {
-        color: @white;
-        background: @jugfuldablue;
-        height: auto !important;
-      }
-
-      &:active {
-        color: @white;
-        background: @jugfuldablueDarker;
-        height: auto !important;
-      }
+	display: block;
+	position: absolute;
+	top: 1em;
+	left: 14em;
+	margin: 0;
+	padding: .3em 0;
+	z-index: 99999999;
+	background: @white;
+	border: 1px solid @concreteDark;
+	.border-radius(@baseBorderRadius);
+	.box-shadow(@shadow);
     }
   }
 }

@@ -19,7 +19,8 @@ $sitetitle = $this->params->get('sitetitle');
 <title><?php echo $this->error->getCode(); ?>-<?php echo $this->title; ?></title>
 
 <?php if ($this->error->getCode()>=400 && $this->error->getCode() < 500) { 	?>
-    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jf-template.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/jf-template.css" type="text/css" media="screen" />
 </head>
 
 <body class="contentpane">

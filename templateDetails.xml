@@ -13,7 +13,7 @@
 		<![CDATA[<h1>JFlex</h1>
 			<h2>a responsive Joomla! template</h2>
 			<p>&copy; 2014 <a href="http://www.adhocgrafx.de" target="_blank">adhocgraFX</a></p>
-			<p><img src="../templates/jflex_j3/template_preview.png" /></p>
+			<p><img src="../templates/jflex/template_preview.png" /></p>
 			<h2>Modulpositionen</h2>
 			<ul>
 			<li>nav</li>
@@ -76,7 +76,7 @@
 				<field name="tabcolor" type="color" default="#ffffff" label="TPL_JF3_FIELD_TCOLOR_LABEL" description="TPL_JF3_FIELD_TCOLOR_DESC" size="7" class="color" ></field>
 				<field name="tabtextcolor" type="color" default="#444444" label="TPL_JF3_FIELD_TTCOLOR_LABEL" description="TPL_JF3_FIELD_TTCOLOR_DESC" size="7" class="color" ></field>
                 <field name="TPL_JF3_FIELD_SPACER_HEADCOLOR_DESC" type="spacer" hr="false" />
-                <field name="headercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_HRCOLOR_LABEL" description="TPL_JF3_FIELD_HRCOLOR_DESC" size="7" class="color" ></field>
+                <field name="headercolor" type="color" default="#BDC3C7" label="TPL_JF3_FIELD_HRCOLOR_LABEL" description="TPL_JF3_FIELD_HRCOLOR_DESC" size="7" class="color" ></field>
                 <field name="footercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_FRCOLOR_LABEL" description="TPL_JF3_FIELD_FRCOLOR_DESC" size="7" class="color" ></field>
                 <field name="headrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_HROWCOLOR_LABEL" description="TPL_JF3_FIELD_HROWCOLOR_DESC" size="7" class="color" ></field>
                 <field name="bottomrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_BROWCOLOR_LABEL" description="TPL_JF3_FIELD_BROWCOLOR_DESC" size="7" class="color" ></field>

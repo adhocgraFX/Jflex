@@ -193,6 +193,8 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
             width: 100%;
             z-index: 99999;
             background: <?php echo $headerColor;?>;
+            opacity: 0.85;
+            filter: Alpha(Opacity=85);
             -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,.2);
             -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,.2);
             box-shadow: 0px 3px 6px 1px rgba(0,0,0,.2);
