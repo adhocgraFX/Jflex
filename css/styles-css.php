@@ -102,6 +102,13 @@ header {
             background-size:100% 100%;
         <?php endif; ?>
     }
+
+    <?php if ($bodybackground): ?>
+        section.head-row, section.bottom-row, footer {
+            opacity: 0.85;
+            filter: Alpha(Opacity=85);
+        }
+    <?php endif; ?>
 }
 
 h1.logotext-top {
