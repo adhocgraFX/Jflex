@@ -20,7 +20,8 @@
   .breadcrumb li:first-child, .breadcrumb li:last-child, .breadcrumb li a {
     padding: .5em;
   }
-	// bootstrap im category blog
+
+  // bootstrap im category blog
   // lösung für Spaltensatz > nur eine spalte zulassen
   .row-fluid {
     [class*="span"] {
@@ -107,6 +108,13 @@
     margin: 1em auto;
 }
 
+section {
+  &.head-row, &.bottom-row {
+    background: inherit;
+    padding: 1em 1em 0 1em;
+  }
+}
+
 #sidebar {
 
 }
@@ -141,14 +149,6 @@ footer, .copy-pad {
   display: block;
   text-align: center;
   padding: 1em;
-}
-
-section {
-
-  &.head-row, &.bottom-row {
-    background: inherit;
-    padding: 1em 1em 0 1em;
-  }
 }
 
 .copy-pad {
