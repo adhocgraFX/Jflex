@@ -2,13 +2,13 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/js/t.desktop.min.js" />
-        <item url="file://$PROJECT_DIR$/js/lazyload.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jsl.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/js/t.desktop.min.js" />
       <root url="file://$PROJECT_DIR$/js/lazyload.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jsl.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

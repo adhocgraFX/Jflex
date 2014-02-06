@@ -57,6 +57,7 @@ $user = JFactory::getUser();
 <html lang="<?php echo $this->language; ?>" class="no-js" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
 
 <head>
+
 <!-- fonts -->
 <?php if ($headfont != "default"): ?>
     <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($headfont); ?>.js"></script>
@@ -65,8 +66,8 @@ $user = JFactory::getUser();
     <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($bodyfont); ?>.js"></script>
 <?php endif;?>
 
-<?php if ($layout != 'desktop'):?>
 <!-- bildverkleinerung über mobify cdn -->
+<?php if ($layout != 'desktop'):?>
 <script>!function(a,b,c,d,e){function g(a,c,d,e){var f=b.getElementsByTagName("script")[0];a.src=e,a.id=c,a.setAttribute("class",d),f.parentNode.insertBefore(a,f)}a.Mobify={points:[+new Date]};var f=/((; )|#|&|^)mobify=(\d)/.exec(location.hash+"; "+b.cookie);if(f&&f[3]){if(!+f[3])return}else if(!c())return;b.write('<plaintext style="display:none">'),setTimeout(function(){var c=a.Mobify=a.Mobify||{};c.capturing=!0;var f=b.createElement("script"),h="mobify",i=function(){var c=new Date;c.setTime(c.getTime()+3e5),b.cookie="mobify=0; expires="+c.toGMTString()+"; path=/",a.location=a.location.href};f.onload=function(){if(e)if("string"==typeof e){var c=b.createElement("script");c.onerror=i,g(c,"main-executable",h,mainUrl)}else a.Mobify.mainExecutable=e.toString(),e()},f.onerror=i,g(f,"mobify-js",h,d)})}(window,document,function(){var a=/webkit|msie\s10|(firefox)[\/\s](\d+)|(opera)[\s\S]*version[\/\s](\d+)|3ds/i.exec(navigator.userAgent);return a?a[1]&&+a[2]<4?!1:a[3]&&+a[4]<11?!1:!0:!1},
 // path to mobify.js
 "//cdn.mobify.com/mobifyjs/build/mobify-2.0.0.min.js",
@@ -277,9 +278,9 @@ function() {
 
 <!--  load scripts -->
 <?php if ($layout != 'mobile'):?>
-<script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js';?>"></script>
 <?php elseif ($layout == 'mobile'):?>
-<script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js';?>"></script>
 <?php endif; ?>
 
 <!-- load plugin scripts -->

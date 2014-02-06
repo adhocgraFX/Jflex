@@ -29,3 +29,11 @@ simplify index.php
 Good things to keep:
 ====================
 off canvas navigation pattern, inspired by David Bushell
+
+Already done:
+==============
+html5 boilerplate
+
+section
+
+pocket grid

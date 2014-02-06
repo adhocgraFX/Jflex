@@ -184,7 +184,7 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
         }
         .logotext.stickem.stickit {
             z-index: 9999;
-            width: 200px;
+            width: 300px;
         }
         .logotext.stickem.stickit a h1.logotext-top {
             font-size: 1.7em;
@@ -231,7 +231,7 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
 
     @media screen and (min-width: 80em) {
         .logotext.stickem.stickit {
-            width: 220px;
+            width: 320px;
         }
         .nav-module-pad.stickem.stickit {
             top: .2em;
