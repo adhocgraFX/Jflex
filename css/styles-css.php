@@ -14,9 +14,7 @@
 	$linkColor = $this->params->get('linkcolor');
 	$hoverColor = $this->params->get('hovercolor');
 	$bodybackground = $this->params->get('bodybackground');
-	$tabbackground = $this->params->get('tabcolor');
-	$tabtext = $this->params->get('tabtextcolor');
-    $headerColor = $this->params->get('headercolor');
+	$headerColor = $this->params->get('headercolor');
     $footerColor = $this->params->get('footercolor');
     $hrowColor = $this->params->get('headrowcolor');
     $browColor = $this->params->get('bottomrowcolor');
@@ -27,6 +25,10 @@
     $wunit = $this->params->get('wunit');
 	$basefontsize = $this->params->get('basefontsize');
     $textindent = $this->params->get('textindent');
+    $headfont = $this->params->get('headfont');
+    $bodyfont = $this->params->get('bodyfont');
+    $typesize = $this->params->get('typesize');
+    $sozialbuttons = $this->params->get('sozialbuttons');
 ?>
 
 <style type="text/css">
@@ -71,7 +73,12 @@ body  {
 
 #main-pad {
     max-width: <?php echo $maxwidth;?><?php echo $wunit;?>;
- 	background: <?php echo $bodyColor;?>;
+}
+
+section#main {
+    background: <?php echo $bodyColor;?>;
+    opacity: 0.90;
+    filter: Alpha(Opacity=90);
 }
 
 section.head-row {
@@ -111,6 +118,21 @@ header {
     <?php endif; ?>
 }
 
+@media screen and (min-width: 47em) {
+    <?php if ($this->countModules('nav_mobile or sidebar')): ?>
+        section[role ="main"] {
+            width: 61.8%; /* goldener Schnitt */
+        }
+        aside[role="complementary"] {
+            width: 38.2%; /* goldener Schnitt */
+        }
+    <?php else: ?>
+        section[role ="main"] {
+            width: 100%;
+        }
+    <?php endif; ?>
+}
+
 h1.logotext-top {
     color: <?php echo $maintitleColor;?> !important;
 }
@@ -127,13 +149,6 @@ h1.logotext-sub {
 	#outer-wrapper, #main-pad { background: <?php echo $bodyColor;?>; }
 <?php endif;?>
 
-.tabcontent, ul.tabs li a.linkopen, ul.tabs li a.linkopen:link, ul.tabs li a.linkopen:visited,
-div.current, dl.tabs dt.open, .panel .pane-down {
- 	background: <?php echo $tabbackground;?>;
-}
-div.current, .tabopen {
- 	color: <?php echo $tabtext;?>;
-}
 a, a:visited {
  	color: <?php echo $linkColor;?>;
 }
@@ -184,7 +199,7 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
         }
         .logotext.stickem.stickit {
             z-index: 9999;
-            width: 300px;
+            width: 8em;
         }
         .logotext.stickem.stickit a h1.logotext-top {
             font-size: 1.7em;
@@ -208,74 +223,78 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
         }
 
         .module.stickem.stickit {
-            z-index: 999999;
-            right: 0;
+            z-index: 99999;
+            right: 1em;
             top: 3.5em;
             width: 12em;
         }
 
         .nav-module-pad.stickem.stickit {
             z-index: 999999;
-            right: .25em;
+            right: 1em;
             top: .15em;
             width: 12em;
         }
+
+        .gototop-pad.stickem.stickit {
+            z-index: 999;
+            top: 90%;
+            right: 1em;
+            bottom: 2em;
+            width: 3em;
+        }
+
+        .gototop-pad.stickem.stickit > ul.mynav {
+            position: absolute;
+            bottom: 0;
+        }
+
+        <?php if ($typesize == 1): ?>
+        .textresizer-pad.stickem.stickit {
+            z-index: 99999;
+            top: 6em;
+            right: 1em;
+            width: 3em;
+            height: 9em;
+        }
+        .textresizer-pad.stickem.stickit > ul.textresizer li a {
+            float: none !important;
+            margin: 0 0 .25em 0!important;
+            width: 100% !important;
+        }
+        <?php endif;?>
+
+        <?php if ($sozialbuttons == 1): ?>
+        .social-buttons-pad.stickem.stickit {
+            z-index: 99999;
+            top: 18em;
+            right: 1em;
+            width: 3em;
+            height: 9em;
+        }
+        .social-buttons-pad.stickem.stickit > ul.social-buttons li a {
+            float: none !important;
+            margin: 0 0 .25em 0!important;
+            width: 100% !important;
+        }
+        <?php endif;?>
 
         .stickit-end {
             bottom: 0;
             position: absolute;
             right: 0;
         }
-
     }
 
     @media screen and (min-width: 80em) {
         .logotext.stickem.stickit {
-            width: 320px;
+            width: 9em;
         }
         .nav-module-pad.stickem.stickit {
+            right: .75em;
             top: .2em;
         }
     }
 <?php endif; ?>
 
 </style>
-
-<!--[if lt IE 9 ]>
-	<style type="text/css">
-		.no-flexbox {}
-		.no-canvas {}
-		.no-canvastext {}
-		.no-websqldatabase {}
-		.no-indexeddb {}
-		.no-history {}
-		.no-websockets {}
-		.no-rgba {}
-		.no-hsla {}
-		.no-multiplebgs {}
-		.no-backgroundsize {}
-		.no-borderimage {}
-		.no-borderradius {}
-		.no-boxshadow {}
-		.no-textshadow {}
-		.no-opacity {}
-		.no-cssanimations {}
-		.no-csscolumns {}
-		.no-cssgradients {}
-		.no-cssreflections {}
-		.no-csstransforms {}
-		.no-csstransforms3d {}
-		.no-csstransitions {}
-		.no-video {}
-		.no-audio {}
-		.no-webworkers {}
-		.no-applicationcache {}
-	</style>
-<![endif]-->
-
-<!--[if lt IE 8 ]>
-	<style type="text/css">
-		.no-hashchange {}
-		.no-generatedcontent {}
-	</style>
-<![endif]-->

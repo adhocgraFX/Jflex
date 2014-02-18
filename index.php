@@ -7,7 +7,7 @@
 **/
 defined( '_JEXEC' ) or die; 
 
-// variables
+// joomla variables
 $app = JFactory::getApplication();
 $doc = JFactory::getDocument(); 
 $params = $app->getParams();
@@ -21,23 +21,21 @@ include_once ('js/Mobile_Detect.php');
 $detect = new Mobile_Detect();
 $layout = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'mobile') : 'desktop');
 
-// mein css
+// template css
 $doc->addStyleSheet($tpath.'/css/jf-template.css');
 
 // modernizer mit html5-shiv must be in the head
 $doc->addScript($tpath.'/js/modernizr-2.6.2-respond-1.1.0.min.js');
 
-// get my params
+// get template params
 $headfont = $this->params->get('headfont');
 $bodyfont = $this->params->get('bodyfont');
 $headerlogo = $this->params->get('headerlogo');
 $sitetitle = $this->params->get('sitetitle');
-$analytics = $this->params->get('analytics');
-$anonym = $this->params->get('anonym');
 $typesize = $this->params->get('typesize');
 $maintitle = $this->params->get('maintitle');
 $subtitle = $this->params->get('subtitle');
-$textindent = $this->params->get('textindent');
+$sozialbuttons = $this->params->get('sozialbuttons');
 
 // Add Joomla! JavaScript Frameworks
 JHtml::_('bootstrap.framework');
@@ -123,7 +121,7 @@ function() {
     <!--  innerer Rahmen  -->
     <div id="inner-wrapper" class="stickem-container">
         <!-- header -->
-        <header id="top" role="banner" >
+        <header id="top" role="banner">
             <?php if ($layout == 'mobile'):?>
                 <div role="navigation" >
 				    <button class="btn btn-inverse nav-btn" id="nav-open-btn" >
@@ -151,8 +149,8 @@ function() {
                 <?php endif;?>
             <?php endif;?>
 
-            <nav id="nav" role="navigation" >
-                <div class="nav-close-pad stickem" >
+            <nav id="nav" role="navigation">
+                <div class="nav-close-pad stickem">
                     <jdoc:include type="modules" name="nav" />
                     <?php if ($layout == 'mobile'):?>
                         <jdoc:include type="modules" name="nav_mobile" />
@@ -164,7 +162,7 @@ function() {
 
                 <!-- module pos inside nav  -->
                 <?php if ($this->countModules('nav_module')): ?>
-                    <div class="nav-module-pad stickem" role="search" >
+                    <div class="nav-module-pad stickem" role="search">
                         <jdoc:include type="modules" name="nav_module" style="joomskeleton" />
                     </div>
                 <?php endif;?>
@@ -174,77 +172,119 @@ function() {
         <!-- head row -->
         <?php if ($layout != 'mobile'):?>
             <?php if ($this->countModules('head_row')): ?>
-                <section class="head-row row-fluid" role="complementary" >
+                <section class="head-row row-fluid" role="complementary">
 			        <jdoc:include type="modules" name="head_row" style="joomskeleton" />
                 </section>
 		    <?php endif; ?>
         <?php endif; ?>
 
         <!-- content Rahmen-->
-        <section class="block-group" id="main-pad" >
+        <section class="block-group" id="main-pad">
 
-            <jdoc:include type="message" />
-
-            <!-- old browser info -->
-            <!--[if lt IE 9]> <p class="box alert">You are using an outdated browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">activate Google Chrome Frame</a> to improve your experience.</p> <![endif]-->
+            <!-- content head row -->
+            <?php if ($layout != 'mobile'):?>
+                <?php if ($this->countModules('content_head_row')): ?>
+                    <section class="content_head-row block row-fluid" role="complementary">
+                        <jdoc:include type="modules" name="content_head_row" style="joomskeleton" />
+                    </section>
+                <?php endif; ?>
+            <?php endif; ?>
 
             <!-- 2 columns: content + message above content | sidebar -->
-		    <section class="block" id="main" role="main" >
-                <jdoc:include type="modules" name="head_tabs" style="beezTabs" headerLevel="2"  id="1" />
-				<jdoc:include type="component" />
-				<jdoc:include type="modules" name="bottom_tabs" style="beezTabs" headerLevel="2"  id="2" />
-                <?php if ($this->countModules('breadcrumbs')): ?>
-                    <div class="breadcrumbs-pad" role="navigation" >
-                        <jdoc:include type="modules" name="breadcrumbs" />
-                    </div>
-                <?php endif; ?>
-            </section>
-		    <aside class="block" id="sidebar" role="complementary" >
-                <?php if ($layout != 'mobile'):?>
-                    <!-- typeresizer -->
+		    <section class="block" id="main" role="main">
+
+                <!-- message -->
+                <jdoc:include type="message" />
+
+                <!-- old browser info -->
+                <!--[if lt IE 9]> <p class="box alert">You are using an outdated browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">activate Google Chrome Frame</a> to improve your experience.</p> <![endif]-->
+
+                <!-- typeresizer -->
+                <?php if ($layout == 'mobile'):?>
                     <?php if ($typesize == 1): ?>
-                        <div class="textresizer-pad" >
+                        <div class="textresizer-pad stickem">
                             <ul class="textresizer" id="textsizer-embed">
-                                <li><a href="#nogo" class="small-text" title="<?php echo JText::_('TPL_JF3_SMALL'); ?>"><?php echo JText::_('TPL_JF3_SMALL'); ?></a></li>
-                                <li><a href="#nogo" class="default-text" title="<?php echo JText::_('TPL_JF3_DEFAULT'); ?>"><?php echo JText::_('TPL_JF3_DEFAULT'); ?></a></li>
-                                <li><a href="#nogo" class="large-text" title="<?php echo JText::_('TPL_JF3_LARGE'); ?>"><?php echo JText::_('TPL_JF3_LARGE'); ?></a></li>
-                                <li><a href="#nogo" class="x-large-text" title="<?php echo JText::_('TPL_JF3_XLARGE'); ?>"><?php echo JText::_('TPL_JF3_XLARGE'); ?></a></li>
+                                <li><a href="#nogo" class="small-text" title="<?php echo JText::_('TPL_JF3_SMALL'); ?>"><span class="icon-angle-down icon-large"></span></a></li>
+                                <li><a href="#nogo" class="default-text" title="<?php echo JText::_('TPL_JF3_DEFAULT'); ?>"><span class="icon-text-height icon-large"></span></a></li>
+                                <li><a href="#nogo" class="large-text" title="<?php echo JText::_('TPL_JF3_LARGE'); ?>"><span class="icon-angle-up icon-large"></span></a></li>
+                                <li><a href="#nogo" class="x-large-text" title="<?php echo JText::_('TPL_JF3_XLARGE'); ?>"><span class="icon-double-angle-up icon-large"></a></li>
                             </ul>
                         </div>
                     <?php endif;?>
+                <?php endif;?>
+
+                <!-- content -->
+                <jdoc:include type="component" />
+
+                <!-- breadcrumbs -->
+                <?php if ($this->countModules('breadcrumbs')): ?>
+                    <div class="breadcrumbs-pad" role="navigation">
+                        <jdoc:include type="modules" name="breadcrumbs" />
+                    </div>
+                <?php endif; ?>
+
+            </section>
+
+            <aside class="block" id="sidebar" role="complementary">
+
+                <!-- typeresizer -->
+                <?php if ($layout != 'mobile'):?>
+                    <?php if ($typesize == 1): ?>
+                        <div class="textresizer-pad stickem">
+                            <ul class="textresizer" id="textsizer-embed">
+                                <li><a href="#nogo" class="small-text" title="<?php echo JText::_('TPL_JF3_SMALL'); ?>"><span class="icon-angle-down icon-large"></span></a></li>
+                                <li><a href="#nogo" class="default-text" title="<?php echo JText::_('TPL_JF3_DEFAULT'); ?>"><span class="icon-text-height icon-large"></span></a></li>
+                                <li><a href="#nogo" class="large-text" title="<?php echo JText::_('TPL_JF3_LARGE'); ?>"><span class="icon-angle-up icon-large"></span></a></li>
+                                <li><a href="#nogo" class="x-large-text" title="<?php echo JText::_('TPL_JF3_XLARGE'); ?>"><span class="icon-double-angle-up icon-large"></a></li>
+                            </ul>
+                        </div>
+                    <?php endif;?>
+                <?php endif;?>
+
+                <?php if ($layout != 'mobile'):?>
                     <jdoc:include type="modules" name="nav_mobile" style="joomskeleton" />
                 <?php endif;?>
-                <jdoc:include type="modules" name="sidebar" style="joomskeleton"  />
-                <jdoc:include type="modules" name="sidebar_tabs" style="beezTabs" headerLevel="2"  id="3" />
-                <div class="social-buttons-pad" >
-                    <ul class="social-buttons">
-                        <li><a href="https://twitter.com/" target="_blank" title="twitter"><span class="icon-twitter icon-large"></span></a></li>
-                        <li><a href="https://plus.google.com/" target="_blank" title="google plus"><span class="icon-google-plus icon-large"></span></a></li>
-                        <li><a href="https://github.com/" target="_blank" title="github"><span class="icon-github icon-large"></span></a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank" title="facebook"><span class="icon-facebook icon-large"></span></a></li>
-                    </ul>
-                </div>
-            </aside>
-		</section> <!-- content Rahmen -->
 
+                <jdoc:include type="modules" name="sidebar" style="joomskeleton"  />
+
+            </aside>
+
+            <!-- content head row content first in mobile moder-->
+            <?php if ($layout == 'mobile'):?>
+                <?php if ($this->countModules('content_head_row')): ?>
+                    <section class="content_head-row block row-fluid" role="complementary">
+                        <jdoc:include type="modules" name="content_head_row" style="joomskeleton" />
+                    </section>
+                <?php endif; ?>
+            <?php endif; ?>
+
+            <!-- content bottom row-->
+            <?php if ($this->countModules('content_bottom_row')): ?>
+                <section class="content_bottom-row block row-fluid" role="complementary">
+                    <jdoc:include type="modules" name="content_bottom_row" style="joomskeleton" />
+                </section>
+            <?php endif; ?>
+
+        </section> <!-- content Rahmen -->
+
+        <!-- head row content first in mobile mode -->
         <?php if ($layout == 'mobile'):?>
-            <!-- head  content first in mobile mode -->
-			<?php if ($this->countModules('head_row')): ?>
-		        <section class="head-row row-fluid" role="complementary" >
+            <?php if ($this->countModules('head_row')): ?>
+		        <section class="head-row row-fluid" role="complementary">
 			        <jdoc:include type="modules" name="head_row" style="joomskeleton" />
 		        </section>
 		    <?php endif; ?>
         <?php endif; ?>
 
-        <!-- bottom -->
+        <!-- bottom row -->
 		<?php if ($this->countModules('bottom_row')): ?>
-		    <section class="bottom-row row-fluid" role="complementary" >
+		    <section class="bottom-row row-fluid" role="complementary">
 			    <jdoc:include type="modules" name="bottom_row" style="joomskeleton" />
 		    </section>
 		<?php endif; ?>
 
         <!-- footer -->
-        <footer role="contentinfo" >
+        <footer role="contentinfo">
             <!-- footer module -->
             <?php if ($this->countModules('footer')): ?>
 			    <jdoc:include type="modules" name="footer" style="joomskeleton" />
@@ -257,208 +297,43 @@ function() {
 		            </div>
 		           </noscript>
 		    <?php endif; ?>
-            <!--  just go to top  -->
-		    <div class="gototop-pad">
-			    <ul class="mynav">
-				    <li><a href="#top"><span class="icon-chevron-up"></span><p hidden>go to top</p></a></li>
-			    </ul>
-		    </div>
             <!-- delete me - if you don't like me -->
             <div class="copy-pad">
                 <a href="http://www.adhocgrafx.de" target="_blank">adhocgraFX &copy; Johannes Hock, 2014</a>
             </div>
+            <!-- sozial buttons -->
+            <?php if ($sozialbuttons == 1): ?>
+                <div class="social-buttons-pad stickem">
+                    <ul class="social-buttons">
+                        <li><a href="https://twitter.com/" target="_blank" title="twitter"><span class="icon-twitter icon-large"></span></a></li>
+                        <li><a href="https://plus.google.com/" target="_blank" title="google plus"><span class="icon-google-plus icon-large"></span></a></li>
+                        <li><a href="https://github.com/" target="_blank" title="github"><span class="icon-github icon-large"></span></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank" title="facebook"><span class="icon-facebook icon-large"></span></a></li>
+                    </ul>
+                </div>
+            <?php endif;?>
+            <!--  just go to top  -->
+            <div class="gototop-pad stickem">
+                <ul class="mynav">
+                    <li><a href="#top"><span class="icon-chevron-up"></span><p hidden>go to top</p></a></li>
+                </ul>
+            </div>
         </footer>
-
     </div> <!-- innerer Rahmen-->
-
 </div> <!-- äußerer Rahmen-->
 
 <!-- debug -->
 <jdoc:include type="modules" name="debug" />
 
-<!--  load scripts -->
+<!--  load plugin scripts -->
 <?php if ($layout != 'mobile'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js.php';?>"></script>
 <?php elseif ($layout == 'mobile'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js.php';?>"></script>
 <?php endif; ?>
 
-<!-- load plugin scripts -->
-<script type="text/javascript">
-
-//  Avoid `console` errors in browsers that lack a console.
-    (function() {
-        var method;
-        var noop = function () {};
-        var methods = [
-            'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-            'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-            'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-            'timeStamp', 'trace', 'warn'
-        ];
-        var length = methods.length;
-        var console = (window.console = window.console || {});
-
-        while (length--) {
-            method = methods[length];
-
-            // Only stub undefined methods.
-            if (!console[method]) {
-                console[method] = noop;
-            }
-        }
-    }());
-
-//  smooth scroll
-	jQuery(document).ready(function() {
-		jQuery('ul.mynav a').smoothScroll({
-			speed: 600
-		});
-	});
-
-<?php if ($layout != 'mobile'):?>
-<?php if ($this->countModules('head_row') or $this->countModules('bottom_row')): ?>
-//  für gleiche modulhöhen - nun mit window load
-    jQuery(window).load(function(){
-        jQuery('.equal-1 .module-body').syncHeight({ 'updateOnResize': true});
-        jQuery(window).resize(function(){
-            if(jQuery(window).width() < 753){
-                jQuery('.equal-1 .module-body').unSyncHeight();
-            }
-        });
-    });
-    jQuery(window).load(function(){
-        jQuery('.equal-2 .module-body').syncHeight({ 'updateOnResize': true});
-        jQuery(window).resize(function(){
-            if(jQuery(window).width() < 753){
-                jQuery('.equal-2 .module-body').unSyncHeight();
-            }
-        });
-    });
-jQuery(window).load(function(){
-    jQuery('.equal-3 .module-body').syncHeight({ 'updateOnResize': true});
-    jQuery(window).resize(function(){
-        if(jQuery(window).width() < 753){
-            jQuery('.equal-3 .module-body').unSyncHeight();
-        }
-    });
-});
-jQuery(window).load(function(){
-    jQuery('.equal-4 .module-body').syncHeight({ 'updateOnResize': true});
-    jQuery(window).resize(function(){
-        if(jQuery(window).width() < 753){
-            jQuery('.equal-4 .module-body').unSyncHeight();
-        }
-    });
-});
-<?php endif; ?>
-
-//  text resizer
-    <?php if ($typesize == 1):?>
-	jQuery(document).ready( function() {
-        jQuery( "#textsizer-embed a" ).textresizer({
-		target: "#main",
-		type: "css",
-		sizes: [
-            // Small. Index 0
-            { "font-size" : "87.5%",
-              "line-height" : "1.4"
-            },
-            // Default. Index 1
-            { "font-size" : "100%",
-              "line-height" : "1.5"
-            },
-            // Large. Index 2
-            { "font-size" : "112.5%",
-              "line-height" : "1.5"
-            },
-            // X-Large. Index 3
-            { "font-size" : "125%",
-              "line-height" : "1.6"
-            }
-        ],
-		selectedIndex: 1
-		});
-	});
-    <?php endif; ?>
-
-// flexslider
-    <?php if ($this->countModules('slideshow')): ?>
-    jQuery(window).load(function() {
-        jQuery('.flexslider').flexslider({
-        animation: "fade",
-        controlNav: true,
-        directionNav: true
-        });
-    });
-    <?php endif; ?>
-
-// slabtext experiment
-// momentan nicht
-<?php endif; ?>
-
-<?php if ($layout == 'desktop'):?>
-// jquery stickem nur für desktop
-jQuery(document).ready(function() {
-    jQuery('.stickem-container').stickem({
-            <?php if ($this->countModules('slideshow')): ?>
-            start: 900
-            <?php else: ?>
-            start: 400
-            <?php endif; ?>
-        }
-    );
-});
-<?php endif; ?>
-
-<?php if ($layout != 'desktop'):?>
-//  Add this event to your JS to enable active states on all of your elements.
-//  This can be a bit slow on huge pages so it might be worth restricting it to certain elements instead of document
-    document.addEventListener("touchstart", function(){}, true)
-<?php endif; ?>
-
-<?php if ($layout == 'tablet'):?>
-//  doubletaptogo by Osvaldas Valutis
-    jQuery(function()
-    {
-        jQuery( '#nav li:has(ul)' ).doubleTapToGo();
-    });
-<?php endif; ?>
-
-//  google analytics id
-<?php if ($analytics != "UA-XXXXX-X"): ?>
-    var _gaq=[['_setAccount','<?php echo htmlspecialchars($analytics); ?>'],['_trackPageview']];
-    <?php if ($anonym == 1):?>
-        _gaq.push (['_gat._anonymizeIp']);
-    <?php endif; ?>
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
-<?php endif; ?>
-
-//  footable responsive tables
-  jQuery(window).load(function() {
-    jQuery('.footable').footable({
-            phone: 480,
-            tablet: 767
-        }
-    );
-  });
-
-<?php if ($textindent == 1):?>
-//  text indent for bookstyle blogs
-jQuery(document).ready( function() {
-    jQuery("p").has("img").css({
-        "margin-top": ".75em",
-        "margin-bottom": "1.5em",
-        "text-indent": "0px"});
-    jQuery("p").has("button").css({
-        "margin-top": ".75em",
-        "margin-bottom": ".75em",
-        "text-indent": "0px"});
-    jQuery("p").has("img").addClass("bild");
-})
-<?php endif; ?>
-
-</script>
+<!-- load plugin options -->
+<?php include_once ('js/plugin.js.php'); ?>
 
 </body>
 </html>

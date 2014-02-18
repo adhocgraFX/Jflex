@@ -62,7 +62,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 		</dt>
 
 		<?php if ($params->get('show_author') && !empty($this->item->author )) : ?>
-			<dd class="createdby">
+			<dd class="createdby"><span class="icon-user"></span>
 				<?php $author = $this->item->author; ?>
 				<?php $author = ($this->item->created_by_alias ? $this->item->created_by_alias : $author); ?>
 				<?php if (!empty($this->item->contactid ) && $params->get('link_author') == true) : ?>
@@ -77,7 +77,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 		<?php endif; ?>
 
 		<?php if ($params->get('show_parent_category') && !empty($this->item->parent_slug)) : ?>
-			<dd class="parent-category-name">
+			<dd class="parent-category-name"><span class="icon-folder-open"></span>
 				<?php $title = $this->escape($this->item->parent_title);
 				$url = '<a href="'.JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->parent_slug)).'">'.$title.'</a>';?>
 				<?php if ($params->get('link_parent_category') && !empty($this->item->parent_slug)) : ?>
@@ -89,7 +89,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 		<?php endif; ?>
 
 		<?php if ($params->get('show_category')) : ?>
-			<dd class="category-name">
+			<dd class="category-name"><span class="icon-folder-open-alt"></span>
 				<?php $title = $this->escape($this->item->category_title);
 				$url = '<a href="'.JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->catslug)).'">'.$title.'</a>';?>
 				<?php if ($params->get('link_category') && $this->item->catslug) : ?>
@@ -153,7 +153,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 		</dt>
 		<?php if ($info == 1) : ?>
 			<?php if ($params->get('show_author') && !empty($this->item->author )) : ?>
-				<dd class="createdby">
+				<dd class="createdby"><span class="icon-user"></span>
 					<?php $author = $this->item->author; ?>
 					<?php $author = ($this->item->created_by_alias ? $this->item->created_by_alias : $author); ?>
 					<?php if (!empty($this->item->contactid ) && $params->get('link_author') == true) : ?>
@@ -168,7 +168,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 			<?php endif; ?>
 
 			<?php if ($params->get('show_parent_category') && !empty($this->item->parent_slug)) : ?>
-				<dd class="parent-category-name">
+				<dd class="parent-category-name"><span class="icon-folder-open"></span>
 					<?php	$title = $this->escape($this->item->parent_title);
 					$url = '<a href="'.JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->parent_slug)).'">'.$title.'</a>';?>
 					<?php if ($params->get('link_parent_category') && $this->item->parent_slug) : ?>
@@ -180,7 +180,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 			<?php endif; ?>
 
 			<?php if ($params->get('show_category')) : ?>
-				<dd class="category-name">
+				<dd class="category-name"><span class="icon-folder-open-alt"></span>
 					<?php $title = $this->escape($this->item->category_title);
 					$url = '<a href="'.JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->catslug)).'">'.$title.'</a>';?>
 					<?php if ($params->get('link_category') && $this->item->catslug) : ?>

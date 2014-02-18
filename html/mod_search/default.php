@@ -20,9 +20,9 @@ if ($imagebutton) {
 
 			if ($button) :
 				if ($imagebutton) :
-					$button = '<input type="image" value="'.$button_text.'" class="btn btn-primary" src="'.$img.'" onclick="this.form.searchword.focus();"/>';
+					$button = '<input type="image" value="'.$button_text.'" class="btn" src="'.$img.'" onclick="this.form.searchword.focus();"/>';
 				else :
-					$button = '<input type="submit" value="'.$button_text.'" class="btn btn-primary" onclick="this.form.searchword.focus();"/>';
+					$button = '<input type="submit" value="'.$button_text.'" class="btn" onclick="this.form.searchword.focus();"/>';
 				endif;
 			endif;
 

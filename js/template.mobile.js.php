@@ -22,9 +22,10 @@ $ExpStr = "Expires: " . gmdate("D, d M Y H:i:s", time() + $offset) . " GMT";
 // send cache expiration header to broswer
 header($ExpStr);
 
-require('beez-tabs.min.js');
 require('jquery.smooth-scroll.min.js');
 require('footable-0.1.min.js');
+require('jquery.cookie.min.js');
+require('jquery.textresizer.min.js');
 
 // off canvas navigation by David Bushell
 require('off-canvas.min.js');

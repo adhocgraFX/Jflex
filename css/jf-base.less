@@ -140,11 +140,6 @@ svg {
 * {
 	/* für alle elemente */
 	.box-sizing(border-box);
-	/*-webkit-transition: all .4s linear;
-	  -moz-transition: all .4s linear;
-	  -o-transition: all .4s linear;
-	  -ms-transition: all .4s linear;
-	  transition: all .4s linear;*/
 }
 
 /*	H5BP helper classes	*/
@@ -198,11 +193,18 @@ body {
 }
 
 // sanfte Übergänge
-body, img, a {
-	transition: all .2s linear;
-	-o-transition: all .2s linear;
-	-moz-transition: all .2s linear;
-	-webkit-transition: all .2s linear;
+a {
+	transition: background-color .2s, color .2s, transform .2s;
+	-o-transition: background-color .2s, color .2s, -o-transform .2s;
+	-moz-transition: background-color .2s, color .2s, -moz-transform .2s;
+	-webkit-transition: background-color .2s, color .2s, -webkit-transform .2s;
+}
+
+img {
+	transition: width .2s linear;
+	-o-transition: width .2s linear;
+	-moz-transition: width .2s linear;
+	-webkit-transition: width .2s linear;
 }
 
 /* #Typography
@@ -963,14 +965,14 @@ tbody {
 		> tr > td.expand {
 
 			&:before {
-				content: "\F13A";
+				content: "\F13A"; // chevron sign down
 			}
 		}
 
 		> tr.footable-detail-show > td.expand {
 
 			&:before {
-				content: "\F139";
+				content: "\F139"; // chevron sign up
 			}
 		}
 

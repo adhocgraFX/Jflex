@@ -20,9 +20,9 @@
 			<li>nav_module in nav e.g. search, login</li>
 			<li>breadcrumbs</li>
 			<li>slideshow</li>
-			<li>head_row, head_tabs</li>
-			<li>sidebar, sidebar_tabs, nav-mobile in sidebar + nav</li>
-			<li>bottom_row, bottom_tabs</li>
+			<li>head_row</li>
+			<li>sidebar, nav-mobile in sidebar + nav</li>
+			<li>bottom_row</li>
 			<li>footer</li>
 			<li>debug</li>
 			</ul>
@@ -52,11 +52,10 @@
 		<position>breadcrumbs</position>
         <position>slideshow</position>
         <position>head_row</position>
-		<position>head_tabs</position>
+        <position>content_head_row</position>
+        <position>content_bottom_row</position>
         <position>sidebar</position>
-        <position>sidebar_tabs</position>
-		<position>bottom_row</position>
-		<position>bottom_tabs</position>
+        <position>bottom_row</position>
 		<position>footer</position>
 		<position>debug</position>
 	</positions>
@@ -73,9 +72,7 @@
 				<field name="bodycolor" type="color" default="#f9f9f9" label="TPL_JF3_FIELD_BCOLOR_LABEL" description="TPL_JF3_FIELD_BCOLOR_DESC" size="7" class="color" ></field>
 				<field name="linkcolor" type="color" default="#1E90FF" label="TPL_JF3_FIELD_ACOLOR_LABEL" description="TPL_JF3_FIELD_ACOLOR_DESC" size="7" class="color" ></field>
 				<field name="hovercolor" type="color" default="#00BFFF" label="TPL_JF3_FIELD_OCOLOR_LABEL" description="TPL_JF3_FIELD_OCOLOR_DESC" size="7" class="color" ></field>
-				<field name="tabcolor" type="color" default="#ffffff" label="TPL_JF3_FIELD_TCOLOR_LABEL" description="TPL_JF3_FIELD_TCOLOR_DESC" size="7" class="color" ></field>
-				<field name="tabtextcolor" type="color" default="#444444" label="TPL_JF3_FIELD_TTCOLOR_LABEL" description="TPL_JF3_FIELD_TTCOLOR_DESC" size="7" class="color" ></field>
-                <field name="TPL_JF3_FIELD_SPACER_HEADCOLOR_DESC" type="spacer" hr="false" />
+				<field name="TPL_JF3_FIELD_SPACER_HEADCOLOR_DESC" type="spacer" hr="false" />
                 <field name="headercolor" type="color" default="#BDC3C7" label="TPL_JF3_FIELD_HRCOLOR_LABEL" description="TPL_JF3_FIELD_HRCOLOR_DESC" size="7" class="color" ></field>
                 <field name="footercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_FRCOLOR_LABEL" description="TPL_JF3_FIELD_FRCOLOR_DESC" size="7" class="color" ></field>
                 <field name="headrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_HROWCOLOR_LABEL" description="TPL_JF3_FIELD_HROWCOLOR_DESC" size="7" class="color" ></field>
@@ -154,6 +151,10 @@
             <fieldset name="advanced">
 				<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_JF3_FIELD_ANALYTICS_LABEL" description="TPL_JF3_FIELD_ANALYTICS_DESC" size="15" />
                 <field name="anonym" type="radio" default="1" label="TPL_JF3_FIELD_ANONYM_LABEL" description="TPL_JF3_FIELD_ANONYM_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="sozialbuttons" type="radio" default="1" label="TPL_JF3_FIELD_SOZIALB_LABEL" description="TPL_JF3_FIELD_SOZIALB_DESC">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>

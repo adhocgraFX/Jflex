@@ -74,27 +74,20 @@
 	.module.search-style {
 		margin: 0 !important;
 	}
+
+	#main {
+		padding: 1em !important;
+	}
 }
 
 // # pocket grid system
 // =============================
 .block-group {
-	margin: -1em;
+	margin: 0 -1em;
 }
 
 .block {
-	padding: 1em;
-}
-
-@media screen and (min-width: 47em) {
-
-	section[role ="main"] {
-		width: 61.8%; /* goldener Schnitt */
-	}
-
-	aside[role="complementary"] {
-		width: 38.2%; /* goldener Schnitt */
-	}
+	padding: 0 1em;
 }
 
 // #Joomla! Styles = classes and ids for Joomla! specific views
@@ -102,6 +95,7 @@
 // ids menüleisten und header
 #main {
 	display: block;
+	padding: 0 2em 1em 1em;
 }
 
 #main-pad {
@@ -121,7 +115,7 @@ section {
 
 .actions-pad {
 	ul {
-		margin: 0;
+		margin: 2em 0 0 0;
 	}
 	margin: 0;
 	font-size: .875em !important;
@@ -142,10 +136,10 @@ section {
 
 .nav-module-pad {
 	height: 3em;
+	z-index: 999999;
 }
 
 footer, .copy-pad {
-	font-size: 81.25%;
 	display: block;
 	text-align: center;
 	padding: 1em;
@@ -157,6 +151,7 @@ footer, .copy-pad {
 		color: @white !important;
 		.border-radius(.25em);
 		display: inline-block;
+		font-size: .85em;
 		font-weight: normal;
 		text-decoration: none;
 		cursor: pointer;
@@ -532,10 +527,10 @@ header {
 			background: @concrete !important;
 		}
 
-		&.accordion-parent.even {
+		&.accordion-parent.odd {
 			text-decoration: none !important;
-			color: @concreteDarker !important;
-			background: @cloudsDark !important;
+			//color: @concreteDarker !important;
+			//background: @cloudsDark !important;
 
 			&:before {
 				font-family: FontAwesome;
@@ -544,7 +539,7 @@ header {
 				display: inline-block;
 				text-decoration: inherit;
 				padding-right: 1em;
-				content: "\f138"; // chevron sign right
+				content: "\F138"; // chevron right
 			}
 
 			&.collapsed:before {
@@ -554,10 +549,10 @@ header {
 				display: inline-block;
 				text-decoration: inherit;
 				padding-right: 1em;
-				content: "\f13a"; // chevron sign down
+				content: "\F13A"; // chevron sign down
 			}
 
-			&:hover {
+			/*&:hover {
 				color: @whitesmoke !important;
 				background: @concrete !important;
 			}
@@ -565,7 +560,7 @@ header {
 			&:focus, &:active {
 				color: @whitesmoke;
 				background: @concreteDark !important;
-			}
+			}*/
 		}
 	}
 }
@@ -637,7 +632,7 @@ header {
 
 // text-resizer
 #textsizer-embed, ul.social-buttons {
-	margin: 0;
+	margin: 0 0 .5em 0;
 	background: transparent;
 	font-size: .875em;
 }
@@ -653,6 +648,11 @@ ul.textresizer, ul.actions, ul.social-buttons {
 	li {
 		padding: 0;
 		margin: 0;
+
+		&:last-child a {
+			margin-right: 0;
+		}
+
 		a {
 			text-decoration: none;
 			text-align: center;
@@ -686,9 +686,20 @@ ul.textresizer, ul.actions, ul.social-buttons {
 	}
 }
 
-ul.actions li a {
-	float: right; // etwas blöd
-	width: 32%; // nur 3 mal: print - mail - edit
+ul.actions {
+
+	li a {
+		float: right;
+		width: 32%;
+	}
+
+	li:last-child a {
+		margin-right: 1%;
+	}
+
+	li:first-child a {
+		margin-right: 0;
+	}
 }
 
 // go to top
@@ -730,19 +741,31 @@ ul.mynav {
 	}
 }
 
-// breadcrumbs
-.breadcrumbs-pad, .textresizer-pad, .social-buttons-pad {
+// breadcrumbs textresizer sozial buttons
+.textresizer-pad, .social-buttons-pad {
 	margin: 0;
-	font-size: 1em;
 	background: transparent;
+}
+
+.breadcrumbs-pad {
+	background: @clouds;
+	margin: .5em 0;
+	font-size: .875em;
+	.border-radius(@baseBorderRadius);
+	border: 1px solid @cloudsDark;
 }
 
 .textresizer-pad, .social-buttons-pad {
 	text-align: center;
 }
 
+.textresizer-pad {
+	width: 100%;
+	height: 2em;
+	margin: 0 0 1em 0;
+}
+
 .breadcrumb {
-	font-size: .875em !important;
 	width: 100%;
 	line-height: 1.4;
 	padding: 0;
@@ -768,7 +791,7 @@ ul.mynav {
 		float: left;
 		padding: .5em 1em;
 		color: @concreteDarker;
-		background: @cloudsDark;
+		background: @clouds;
 		.border-radius(@baseBorderRadius);
 
 		&:hover {
@@ -789,10 +812,11 @@ ul.mynav {
 	li:last-child {
 		padding: .5em 0;
 	}
-
-	li span.divider {
-		float: right;
-		padding: .8em 0 0 .25em;
+	li .divider {
+		position: relative;
+		padding: 0 .25em;
+		color: @concrete;
+		top: .5em;
 	}
 }
 
@@ -872,160 +896,11 @@ dl.article-info {
 	}
 }
 
-// beez tabs
-.slide {
-	height: auto !important;
-	width: 100%;
-}
-
-ul.tabs {
-	overflow: hidden;
-	padding: 0 !important;
-	margin: 0 !important;
-	display: block;
-	zoom: 1;
-	margin-bottom: 0px !important;
-
-	li {
-		list-style-type: none;
-		float: left;
-		width: auto;
-		height: 3em;
-		padding: 0;
-		display: block;
-		margin: 0 .2em 0 0;
-
-		&:first-child a.active {
-			margin-left: 0;
-		}
-
-		a {
-			display: block;
-			text-decoration: none;
-			width: auto;
-			height: 3em;
-			padding: .25em .5em;
-			line-height: 2.5;
-			border: solid 1px #ccc;
-			border-width: 1px 1px 0 1px;
-			margin: 0;
-			font-size: 1em !important;
-			font-weight: normal;
-			.border-top-left-radius(@baseBorderRadius);
-			.border-top-right-radius(@baseBorderRadius);
-
-			&:link, &:visited {
-				text-decoration: none;
-				font-size: 1em;
-			}
-
-			&:hover, &:active, &:focus {
-				// text-decoration: underline;
-			}
-
-			&.active {
-				background: @white;
-				height: 30px;
-				position: relative;
-				top: -4px;
-				padding-top: 4px;
-				border-left-width: 1px;
-				margin: 0 0 0 -1px;
-				color: #111;
-			}
-
-			&.linkopen {
-				background: #fff;
-
-				&:link, &:visited {
-					font-weight: normal;
-					background: @white;
-				}
-			}
-
-			&.linkclosed {
-				color: @whitesmoke;
-				background: @concrete;
-
-				&:hover {
-					color: @whitesmoke;
-					background: @concreteDark;
-				}
-
-				&:focus, &:active {
-					color: @whitesmoke;
-					background: @concreteDarker;
-				}
-			}
-		}
-	}
-}
-
-ul.tabs-content {
-	margin: 0;
-	display: block;
-
-	li {
-		display: none;
-
-		&.active {
-			display: block;
-		}
-	}
-}
-
-.tabcontent {
-	padding: 1em;
-	background: #fff;
-	color: #444;
-	border: solid 1px #ccc;
-	border-width: 0 1px 1px 1px;
-	.border-top-right-radius(@baseBorderRadius);
-	.border-bottom-right-radius(@baseBorderRadius);
-	.border-bottom-left-radius(@baseBorderRadius);
-
-	&:focus {
-		outline: none;
-	}
-
-	ul {
-		padding: 0;
-
-		li {
-			list-style-type: none;
-		}
-	}
-}
-
-.tabopen {
-	display: block;
-	margin-bottom: 10px;
-	overflow: hidden;
-}
-
-.tabclosed {
-	display: none;
-}
-
-.tabcontent .linkclosed {
-}
-
-.linkopen a {
-}
-
-.tabouter {
-	margin-top: 10px;
-}
-
-// .unseen klasse für beez tabs navi
 // .flat für readmore und .pager für page navi
 // noch schöner verschachteln und mit den anderen flat buttons synchronisieren
 // eigene varablen für Farbfamilien einbauen
-.unseen {
-	margin: 1em 0 .5em 0;
-}
 
-a.unseen, a.readmore-link, a.comments-link {
+a.readmore-link, a.comments-link {
 	float: right !important;
 
 	&:after {
@@ -1040,7 +915,6 @@ a.unseen, a.readmore-link, a.comments-link {
 }
 
 // mit overrides für j-comments
-
 a.readmore-link, a.comments-link {
 	background-image: none !important;
 	margin-bottom: .5em;
@@ -1063,7 +937,7 @@ a.comments-link {
 	display: inline-block;
 }
 
-a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
+a.flat, a.readmore, a.readmore-link, a.comments-link {
 	color: @concreteDarker;
 	background: @cloudsDark !important;
 	.border-radius(@baseBorderRadius);
@@ -1098,8 +972,6 @@ a.unseen, a.flat, a.readmore, a.readmore-link, a.comments-link {
 	float: right !important;
 	margin: 0 0 .2em 0 !important;
 }
-
-// ende beez tabs
 
 .pager li a {
 	color: @concreteDarker;
@@ -1144,11 +1016,6 @@ li.next:before {
 	content: "";
 }
 
-//  readmore
-& + p.readmore {
-	text-indent: 0 !important;
-}
-
 p.readmore, a.readmore {
 	text-align: right;
 	display: block;
@@ -1179,6 +1046,10 @@ p.counter {
 	padding: 0;
 	margin: 1em 0;
 	background: transparent;
+
+	> h2 {
+		margin-top: 0;
+	}
 }
 
 .items-leading {
@@ -1232,6 +1103,11 @@ article {
 		padding: .5em 1em;
 		// color: @gray;
 	}
+
+	.form-inline {
+		padding-bottom: .5em;
+		border-bottom: .25em solid @grayLighter;
+	}
 }
 
 .content_rating {
@@ -1248,13 +1124,6 @@ article {
 		margin: 0 1em 0 0 !important;
 		position: relative;
 		top: -.4em;
-	}
-}
-
-article {
-	.form-inline {
-		padding-bottom: .5em;
-		border-bottom: .25em solid @grayLighter;
 	}
 }
 
@@ -1328,14 +1197,13 @@ dl.tabs {
 		border-bottom: 0;
 		margin-right: 3px;
 		color: @gray;
-		background: @gainsboro;
+		background: @white;
 		.border-top-left-radius(@baseBorderRadius);
 		.border-top-right-radius(@baseBorderRadius);
 	}
 
 	dt.open a {
 		color: @gray;
-		background: @white;
 		border-bottom: 0;
 		z-index: 100;
 	}
