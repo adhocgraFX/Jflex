@@ -198,6 +198,7 @@ a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="rese
             margin: 0;
         }
         .logotext.stickem.stickit {
+            padding-top: .25em;
             z-index: 9999;
             width: 8em;
         }

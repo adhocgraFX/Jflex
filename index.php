@@ -143,7 +143,7 @@ function() {
             <!-- slideshow -->
             <?php if ($layout != 'mobile'):?>
                 <?php if ($this->countModules('slideshow')): ?>
-                    <div class="slideshow-pad flexslider">
+                    <div class="slideshow-pad rslides_container">
                         <jdoc:include type="modules" name="slideshow" />
                     </div>
                 <?php endif;?>

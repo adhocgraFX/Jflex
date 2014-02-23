@@ -2,8 +2,8 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/js/jquery.responsiveText.min.js" />
-        <item url="file://$PROJECT_DIR$/js/jquery.fittext.min.js" />
+        <item url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery.flexslider.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -22,6 +22,8 @@
       <root url="file://$PROJECT_DIR$/js/jquery.responsiveText.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.responsiveText.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.fittext.min.js" />
+      <root url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.flexslider.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

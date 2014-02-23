@@ -168,7 +168,12 @@
 				<field name="gridsort" type="list" default="text" label="TPL_JF3_FIELD_GSORT_LABEL" description="TPL_JF3_FIELD_GSORT_DESC">
 					<option value='mr'>main | right</option>
 					<option value='lm'>left | main</option>
-				</field>				
+				</field>
+                <field name="Slideshow layout" type="spacer" hr="false" />
+                <field name="slidethumb" type="radio" default="0" label="TPL_JF3_FIELD_SLIDETHUMB_LABEL" description="TPL_JJF3_FIELD_SLIDETHUMB_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 			</fieldset>
 		</fields>
 	</config>

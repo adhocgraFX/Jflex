@@ -6,10 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c26cc59-147d-4905-8287-b2e1c6f93e3b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-off-canvas.less" afterPath="$PROJECT_DIR$/css/jf-off-canvas.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jf-responsiveslides.less" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\css\jf-flexslider.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\js\jquery.flexslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\joomla303\templates\Jflex\js\jquery.flexslider.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" afterPath="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" afterPath="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-layout.less" afterPath="$PROJECT_DIR$/css/jf-layout.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.css" afterPath="$PROJECT_DIR$/css/jf-template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-variables.less" afterPath="$PROJECT_DIR$/css/jf-variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.less" afterPath="$PROJECT_DIR$/css/jf-template.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/plugin.js.php" afterPath="$PROJECT_DIR$/js/plugin.js.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-css.php" afterPath="$PROJECT_DIR$/css/styles-css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/template.desktop.js.php" afterPath="$PROJECT_DIR$/js/template.desktop.js.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templateDetails.xml" afterPath="$PROJECT_DIR$/templateDetails.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jflex.iws" />
@@ -36,18 +47,55 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="399" selection-end="468" vertical-scroll-proportion="15.263158" vertical-offset="957" max-vertical-offset="9976">
+            <state line="145" column="46" selection-start="6717" selection-end="6717" vertical-scroll-proportion="-5.3421054" vertical-offset="4002" max-vertical-offset="9976">
               <folding>
-                <marker date="1392702295143" expanded="false" signature="2881:2893" placeholder="..." />
+                <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1393149750177" expanded="false" signature="2881:2893" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.js.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="plugin.js.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/plugin.js.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="23" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.6934783" vertical-offset="2900" max-vertical-offset="5684">
+            <state line="121" column="28" selection-start="4240" selection-end="4240" vertical-scroll-proportion="-17.368422" vertical-offset="2675" max-vertical-offset="5829">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsiveslides.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/responsiveslides.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="11513">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jf-layout.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="199" column="17" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-0.53731346" vertical-offset="5735" max-vertical-offset="44718">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jf-responsiveslides.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/jf-responsiveslides.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="232" column="5" selection-start="3917" selection-end="3917" vertical-scroll-proportion="0.7824223" vertical-offset="5998" max-vertical-offset="6931">
               <folding />
             </state>
           </provider>
@@ -56,25 +104,7 @@
       <file leaf-file-name="styles-css.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles-css.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="57" selection-start="1277" selection-end="1277" vertical-scroll-proportion="38.157894" vertical-offset="2204" max-vertical-offset="8729">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-variables.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="29" selection-start="4344" selection-end="4344" vertical-scroll-proportion="-9.921053" vertical-offset="4698" max-vertical-offset="8613">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-off-canvas.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="8" selection-start="3841" selection-end="3841" vertical-scroll-proportion="-6.6578946" vertical-offset="5866" max-vertical-offset="20851">
+            <state line="200" column="31" selection-start="5764" selection-end="5764" vertical-scroll-proportion="-10.473684" vertical-offset="5286" max-vertical-offset="8758">
               <folding />
             </state>
           </provider>
@@ -112,11 +142,9 @@
         <option value="$PROJECT_DIR$/html/com_content/category/blog.php" />
         <option value="$PROJECT_DIR$/html/com_content/featured/default.php" />
         <option value="$PROJECT_DIR$/html/layouts/joomla/content/icons.php" />
-        <option value="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
         <option value="$PROJECT_DIR$/css/animate.less" />
         <option value="$PROJECT_DIR$/js/template.mobile.js" />
         <option value="$PROJECT_DIR$/js/template.desktop.js" />
-        <option value="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
         <option value="$PROJECT_DIR$/html/mod_search/default.php" />
         <option value="$PROJECT_DIR$/css/jf-buttons.less" />
         <option value="$PROJECT_DIR$/css/jf-base.less" />
@@ -130,21 +158,26 @@
         <option value="$PROJECT_DIR$/html/com_content/category/blog_item.php" />
         <option value="$PROJECT_DIR$/css/font-awesome-3/variables.less" />
         <option value="$PROJECT_DIR$/css/font-awesome-4/variables.less" />
-        <option value="$PROJECT_DIR$/css/jf-template.less" />
         <option value="$PROJECT_DIR$/css/font-awesome-3/font-awesome.less" />
         <option value="$PROJECT_DIR$/js/template.mobile.js.php" />
         <option value="$PROJECT_DIR$/plugin.js.php" />
-        <option value="$PROJECT_DIR$/templateDetails.xml" />
         <option value="$PROJECT_DIR$/js/jquery.squishy.js" />
         <option value="$PROJECT_DIR$/js/jquery.fittext.js" />
-        <option value="$PROJECT_DIR$/js/template.desktop.js.php" />
         <option value="$PROJECT_DIR$/html/com_content/article/default.php" />
-        <option value="$PROJECT_DIR$/css/jf-layout.less" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/jf-variables.less" />
         <option value="$PROJECT_DIR$/css/jf-off-canvas.less" />
-        <option value="$PROJECT_DIR$/css/styles-css.php" />
+        <option value="$PROJECT_DIR$/js/responsiveslides.js" />
+        <option value="$PROJECT_DIR$/css/responsiveslides.less" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/templateDetails.xml" />
+        <option value="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
+        <option value="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
+        <option value="$PROJECT_DIR$/js/template.desktop.js.php" />
+        <option value="$PROJECT_DIR$/css/jf-template.less" />
         <option value="$PROJECT_DIR$/js/plugin.js.php" />
+        <option value="$PROJECT_DIR$/css/jf-layout.less" />
+        <option value="$PROJECT_DIR$/css/styles-css.php" />
+        <option value="$PROJECT_DIR$/css/jf-responsiveslides.less" />
       </list>
     </option>
   </component>
@@ -223,20 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,40 +420,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/styles-css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="6" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="8845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="25" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.0" vertical-offset="3058" max-vertical-offset="44863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/footable-0.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="23" selection-start="17464" selection-end="17464" vertical-scroll-proportion="4.150254" vertical-offset="7309" max-vertical-offset="12035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-print.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="3248" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="17" selection-start="5827" selection-end="5827" vertical-scroll-proportion="0.82335025" vertical-offset="2176" max-vertical-offset="3161" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="26" selection-start="6458" selection-end="6458" vertical-scroll-proportion="0.8183716" vertical-offset="2203" max-vertical-offset="3161" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-buttons.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="29" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.7202572" vertical-offset="1271" max-vertical-offset="6554" />
@@ -582,16 +567,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-template.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="141" selection-end="141" vertical-scroll-proportion="0.18649517" vertical-offset="0" max-vertical-offset="1189" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templateDetails.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="47" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.69519836" vertical-offset="929" max-vertical-offset="5220" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/template.mobile.js.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="30" selection-start="327" selection-end="327" vertical-scroll-proportion="0.21757771" vertical-offset="0" max-vertical-offset="1073" />
@@ -612,11 +587,6 @@
         <state line="36" column="11" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.8369565" vertical-offset="274" max-vertical-offset="8642" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="32" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.8542337" vertical-offset="218" max-vertical-offset="1218" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/typeplate/typeplate.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.9032607" vertical-offset="6351" max-vertical-offset="20938">
@@ -631,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="25" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.36413044" vertical-offset="3058" max-vertical-offset="44863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/mod_menu/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3045">
@@ -645,39 +608,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="8" selection-start="3841" selection-end="3841" vertical-scroll-proportion="-6.6578946" vertical-offset="5866" max-vertical-offset="20851">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="29" selection-start="4344" selection-end="4344" vertical-scroll-proportion="-9.921053" vertical-offset="4698" max-vertical-offset="8613">
+        <state line="175" column="29" selection-start="4344" selection-end="4344" vertical-scroll-proportion="0.40978262" vertical-offset="4698" max-vertical-offset="8613">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles-css.php">
+    <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="57" selection-start="1277" selection-end="1277" vertical-scroll-proportion="38.157894" vertical-offset="2204" max-vertical-offset="8729">
+        <state line="211" column="8" selection-start="3841" selection-end="3841" vertical-scroll-proportion="0.275" vertical-offset="5866" max-vertical-offset="20851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/responsiveslides.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="399" selection-end="468" vertical-scroll-proportion="15.263158" vertical-offset="957" max-vertical-offset="9976">
+        <state line="145" column="46" selection-start="6717" selection-end="6717" vertical-scroll-proportion="-5.3421054" vertical-offset="4002" max-vertical-offset="9976">
           <folding>
-            <marker date="1392702295143" expanded="false" signature="2881:2893" placeholder="..." />
+            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1393149750177" expanded="false" signature="2881:2893" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-template.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="4" selection-start="678" selection-end="678" vertical-scroll-proportion="0.7756906" vertical-offset="255" max-vertical-offset="1160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="7" selection-start="5635" selection-end="5635" vertical-scroll-proportion="0.62258065" vertical-offset="2176" max-vertical-offset="3219">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="77" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.5762004" vertical-offset="2203" max-vertical-offset="3219">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templateDetails.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="126" selection-start="11193" selection-end="11193" vertical-scroll-proportion="0.75782883" vertical-offset="4262" max-vertical-offset="5365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.79635584" vertical-offset="11" max-vertical-offset="1044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/responsiveslides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="11513">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugin.js.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="23" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.6934783" vertical-offset="2900" max-vertical-offset="5684">
+        <state line="121" column="28" selection-start="4240" selection-end="4240" vertical-scroll-proportion="-17.368422" vertical-offset="2675" max-vertical-offset="5829">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="17" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-0.53731346" vertical-offset="5735" max-vertical-offset="44718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles-css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="31" selection-start="5764" selection-end="5764" vertical-scroll-proportion="-10.473684" vertical-offset="5286" max-vertical-offset="8758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-responsiveslides.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="5" selection-start="3917" selection-end="3917" vertical-scroll-proportion="0.7824223" vertical-offset="5998" max-vertical-offset="6931">
           <folding />
         </state>
       </provider>

@@ -14,6 +14,7 @@ $typesize = $this->params->get('typesize');
 $textindent = $this->params->get('textindent');
 $layout = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'mobile') : 'desktop');
 $pageclass = $params->get('pageclass_sfx'); // parameter (menu entry)
+$slidethumb = $this->params->get('slidethumb');
 ?>
 
 <script type="text/javascript">
@@ -80,47 +81,51 @@ $pageclass = $params->get('pageclass_sfx'); // parameter (menu entry)
     <?php if ($this->countModules('head_row') or $this->countModules('bottom_row')): ?>
         //  für gleiche modulhöhen - nun mit window load
         jQuery(window).load(function(){
-        jQuery('.equal-1 .module-body').syncHeight({ 'updateOnResize': true});
-        jQuery(window).resize(function(){
-        if(jQuery(window).width() < 753){
-        jQuery('.equal-1 .module-body').unSyncHeight();
-        }
-        });
+            jQuery('.equal-1 .module-body').syncHeight({ 'updateOnResize': true});
+            jQuery(window).resize(function(){
+                if(jQuery(window).width() < 753){ jQuery('.equal-1 .module-body').unSyncHeight(); }
+            });
         });
         jQuery(window).load(function(){
-        jQuery('.equal-2 .module-body').syncHeight({ 'updateOnResize': true});
-        jQuery(window).resize(function(){
-        if(jQuery(window).width() < 753){
-        jQuery('.equal-2 .module-body').unSyncHeight();
-        }
-        });
+            jQuery('.equal-2 .module-body').syncHeight({ 'updateOnResize': true});
+            jQuery(window).resize(function(){
+                if(jQuery(window).width() < 753){ jQuery('.equal-2 .module-body').unSyncHeight(); }
+            });
         });
         jQuery(window).load(function(){
-        jQuery('.equal-3 .module-body').syncHeight({ 'updateOnResize': true});
-        jQuery(window).resize(function(){
-        if(jQuery(window).width() < 753){
-        jQuery('.equal-3 .module-body').unSyncHeight();
-        }
-        });
+            jQuery('.equal-3 .module-body').syncHeight({ 'updateOnResize': true});
+            jQuery(window).resize(function(){
+                if(jQuery(window).width() < 753){ jQuery('.equal-3 .module-body').unSyncHeight(); }
+            });
         });
         jQuery(window).load(function(){
-        jQuery('.equal-4 .module-body').syncHeight({ 'updateOnResize': true});
-        jQuery(window).resize(function(){
-        if(jQuery(window).width() < 753){
-        jQuery('.equal-4 .module-body').unSyncHeight();
-        }
-        });
+            jQuery('.equal-4 .module-body').syncHeight({ 'updateOnResize': true});
+            jQuery(window).resize(function(){
+                if(jQuery(window).width() < 753){ jQuery('.equal-4 .module-body').unSyncHeight(); }
+            });
         });
     <?php endif; ?>
 
-    // flexslider
+    <!-- responsive slideshow von viljamis -->
     <?php if ($this->countModules('slideshow')): ?>
         jQuery(window).load(function() {
-        jQuery('.flexslider').flexslider({
-        animation: "fade",
-        controlNav: true,
-        directionNav: true
-        });
+            jQuery("#slider").responsiveSlides({
+                <?php if ($slidethumb == 1):?>
+                    auto: true,
+                    //pager: true,
+                    manualControls: '#slider-pager',
+                    //nav: true,
+                    speed: 1000,
+                    //namespace: "centered-btns"
+            <?php else : ?>
+                    auto: true,
+                    pager: false,
+                    //manualControls: '#slider-pager',
+                    nav: true,
+                    speed: 1000,
+                    namespace: "transparent-btns"
+            <?php endif; ?>
+            });
         });
     <?php endif; ?>
 

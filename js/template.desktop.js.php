@@ -30,7 +30,7 @@ require('jquery.textresizer.min.js');
 // nur für desktop laden
 require('jquery.syncheight.min.js');
 require('jquery.stickem.min.js');
-require('jquery.flexslider.min.js');
+require('responsiveslides.min.js');
 
 // experimente: für tablets tap event by Osvaldas Valutis
 require('doubletaptogo.min.js');
