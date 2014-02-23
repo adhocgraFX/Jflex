@@ -144,7 +144,8 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
 				background: darken(@concreteDarker, 10%) !important;
 			}
 		}
-		ul li.deeper.parent > a::after {
+		ul li.deeper.parent > a::after,
+		ul li ul li.deeper.parent > a::after {
 			font-family: FontAwesome;
 			font-weight: normal;
 			font-style: normal;
@@ -156,14 +157,10 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
 			content: "\f0d7"; // caret down
 		}
 
+		ul li.deeper.parent > a::after {
+			content: "\f0d7"; // caret down
+		}
 		ul li ul li.deeper.parent > a::after {
-			font-family: FontAwesome;
-			font-weight: normal;
-			font-style: normal;
-			line-height: inherit;
-			display: inline-block;
-			text-decoration: inherit;
-			float: right;
 			content: "\f0da"; // caret right
 		}
 
@@ -208,11 +205,7 @@ a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type
 			}
 		}
 
-		ul li ul {
-			display: none;
-		}
-
-		ul li:hover ul li ul {
+		ul li ul, ul li:hover ul li ul  {
 			display: none;
 		}
 

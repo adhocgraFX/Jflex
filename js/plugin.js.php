@@ -13,6 +13,7 @@ $anonym = $this->params->get('anonym');
 $typesize = $this->params->get('typesize');
 $textindent = $this->params->get('textindent');
 $layout = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'mobile') : 'desktop');
+$pageclass = $params->get('pageclass_sfx'); // parameter (menu entry)
 ?>
 
 <script type="text/javascript">
@@ -122,6 +123,16 @@ $layout = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'mobile') : '
         });
         });
     <?php endif; ?>
+
+    // kompletter header auf startseite  benötigt pageclass sfx
+    <?php if ($pageclass == "start"):?>
+        jQuery(window).load(function() {
+            var vHeight = jQuery(window).height(),
+                header = jQuery('header');
+                header.css({"height":vHeight});
+            })
+    <?php endif; ?>
+
 <?php endif; ?>
 
 <?php if ($layout == 'desktop'):?>
@@ -129,9 +140,9 @@ $layout = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'mobile') : '
     jQuery(document).ready(function() {
         jQuery('.stickem-container').stickem({
             <?php if ($this->countModules('slideshow')): ?>
-                start: 900
+                start: 1000
             <?php else: ?>
-                start: 400
+                start: 500
             <?php endif; ?>
         });
     })
