@@ -1,6 +1,6 @@
 JFlex 2014
 ============
-responsive Joomla! 3.2 template
+responsive Joomla! 3.xx template
 
 JFlex is started as a copy of JFlex_j3 2013
 
@@ -13,27 +13,22 @@ update to Bootstrap 3 (...)
 
 update to font awesome 4 (...)
 
-change grid system in index.php > semantics
-
-more consequent implementation of html5 boilerplate
-
-more consequent mobile first concept
-
-more consequent section layout
-
-greyscale color scheme
-
-simplify index.php
+simplify index.php > semantics
 
 
 Good things to keep:
 ====================
 off canvas navigation pattern, inspired by David Bushell
 
+
 Already done:
-==============
-html5 boilerplate
+=============
+more consequent implementation of html5 boilerplate
 
-section
+more consequent mobile first concept
 
-pocket grid
+greyscale color scheme
+
+change grid system in index.php: pocket grid (Golden Ratio) + bootstrap grid
+
+more consequent section layout, + 2 positions

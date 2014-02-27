@@ -291,15 +291,13 @@ p {
 		line-height: 1.4;
 	}
 
-	&.bildlegende, &.img_caption {
+	&.bildlegende {
 		font-size: 100%;
 		text-indent: 0;
 		font-style: italic;
 		margin: @paragraph-val/2 0;
 	}
-	&.img_caption {
-		margin: @paragraph-val/2;
-	}
+
 	&.autor {
 		font-size: 112.5%;
 		text-indent: 0;
@@ -735,9 +733,16 @@ img.two-thirds-image {
 	height: auto;
 }
 
-div.img_caption {
+figure {
 	background: @gainsboroLight;
 	border: 1px solid @gainsboro;
+
+	figcaption {
+		font-size: 100%;
+		text-indent: 0;
+		font-style: italic;
+		margin: @paragraph-val/2;
+	}
 }
 
 /* object and video */

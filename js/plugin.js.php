@@ -117,20 +117,20 @@ $slidethumb = $this->params->get('slidethumb');
                     //nav: true,
                     speed: 1000,
                     //namespace: "centered-btns"
-            <?php else : ?>
+                <?php else : ?>
                     auto: true,
                     pager: false,
                     //manualControls: '#slider-pager',
                     nav: true,
                     speed: 1000,
                     namespace: "transparent-btns"
-            <?php endif; ?>
+                <?php endif; ?>
             });
         });
     <?php endif; ?>
 
-    // kompletter header auf startseite  benötigt pageclass sfx
-    <?php if ($pageclass == "start"):?>
+    // kompletter header auf startseite via pageclass sfx
+    <?php if ($pageclass == "header-fullscreen"):?>
         jQuery(window).load(function() {
             var vHeight = jQuery(window).height(),
                 header = jQuery('header');
