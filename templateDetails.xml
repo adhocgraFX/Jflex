@@ -20,9 +20,9 @@
 			<li>nav_module in nav e.g. search, login</li>
 			<li>breadcrumbs</li>
 			<li>slideshow</li>
-			<li>head_row</li>
+			<li>head_row, content_head_row</li>
 			<li>sidebar, nav-mobile in sidebar + nav</li>
-			<li>bottom_row</li>
+			<li>bottom_row, content_bottom_row</li>
 			<li>footer</li>
 			<li>debug</li>
 			</ul>
@@ -34,7 +34,6 @@
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
-		<folder>fonts</folder>
 		<folder>languages</folder>
 		<filename>templateDetails.xml</filename>
 		<filename>template_preview.png</filename>
