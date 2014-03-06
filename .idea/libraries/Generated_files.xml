@@ -3,15 +3,13 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
-        <item url="file://$PROJECT_DIR$/js/jquery.flexslider.min.js" />
+        <item url="file://$PROJECT_DIR$/js/scrollReveal.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/js/t.desktop.min.js" />
       <root url="file://$PROJECT_DIR$/js/lazyload.min.js" />
       <root url="file://$PROJECT_DIR$/js/jsl.min.js" />
-      <root url="file://$PROJECT_DIR$/js/scrollReveal.min.js" />
-      <root url="file://$PROJECT_DIR$/js/scrollReveal.min.js" />
       <root url="file://$PROJECT_DIR$/js/wow.min.js" />
       <root url="file://$PROJECT_DIR$/js/template.desktop.min.js" />
       <root url="file://$PROJECT_DIR$/js/template.mobile.min.js" />
@@ -22,8 +20,9 @@
       <root url="file://$PROJECT_DIR$/js/jquery.responsiveText.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.responsiveText.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.fittext.min.js" />
-      <root url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.flexslider.min.js" />
+      <root url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
+      <root url="file://$PROJECT_DIR$/js/scrollReveal.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

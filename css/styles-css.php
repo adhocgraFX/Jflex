@@ -37,23 +37,15 @@ h1, h2, h3, h4, h5, h6, p.lead, p.bildlegende, p.autor, blockquote {
 }
 <?php if ($headfont != "default"):?>
 	h1, h2, h3, h4, h5, h6 {
-		font-family: <?php echo htmlspecialchars($headfont); ?>, Helvetica, Arial, sans-serif; }
+		font-family: <?php echo htmlspecialchars($headfont); ?>, Helvetica, Arial, 'Droid Sans', sans-serif; }
 <?php endif;?>
 
-body {font-size: <?php echo $basefontsize;?>%;}
-
-@media screen and (min-width: 47em) {
-    body {font-size: <?php echo $basefontsize * 1.125;?>%;}
-}
-
-@media screen and (min-width: 80em) {
-    body {font-size: <?php echo $basefontsize * 1.25;?>%;}
-}
+html {font-size: <?php echo $basefontsize;?>%;}
 
 body  {
     color: <?php echo $fontColor;?> !important;
  	<?php if ($bodyfont != "default"): ?>
-		font-family: <?php echo htmlspecialchars($bodyfont); ?>, Helvetica, Arial, sans-serif;
+		font-family: <?php echo htmlspecialchars($bodyfont); ?>, Helvetica, Arial, 'Droid Sans', sans-serif;
 	<?php endif;?>
 
     <?php if ($layout != 'mobile'):?>
@@ -67,7 +59,7 @@ body  {
 
 <?php if ($bodyfont != "default"): ?>
 	.btn, dl.tabs h3, .panel h3.title  {
-		font-family: <?php echo htmlspecialchars($bodyfont); ?>, Helvetica, Arial, sans-serif;
+		font-family: <?php echo htmlspecialchars($bodyfont); ?>, Helvetica, Arial, 'Droid Sans', sans-serif;
 	}
 <?php endif;?>
 

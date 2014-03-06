@@ -1,6 +1,6 @@
 <?php
 /*------------------------------------------------------------------------
-# JoomFlex j3
+# JoomFlex J3
 # author    Johannes Hock | adhocgraFX
 # copyright Copyright © 2012 Johannes Hock. All rights reserved.
 # @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
@@ -115,14 +115,14 @@ $slidethumb = $this->params->get('slidethumb');
                     //pager: true,
                     manualControls: '#slider-pager',
                     //nav: true,
-                    speed: 1000,
+                    speed: 1200,
                     //namespace: "centered-btns"
                 <?php else : ?>
                     auto: true,
                     pager: false,
                     //manualControls: '#slider-pager',
                     nav: true,
-                    speed: 1000,
+                    speed: 1200,
                     namespace: "transparent-btns"
                 <?php endif; ?>
             });
@@ -151,7 +151,6 @@ $slidethumb = $this->params->get('slidethumb');
             <?php endif; ?>
         });
     })
-
 <?php endif; ?>
 
 <?php if ($layout != 'desktop'):?>

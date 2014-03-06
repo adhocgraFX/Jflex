@@ -781,42 +781,46 @@ ul.mynav {
 		float: left;
 		padding: 0;
 		margin: 0 .4em 0 0;
-	}
 
-	li a {
-		text-decoration: none;
-		font-weight: normal;
-		position: relative;
-		display: block;
-		float: left;
-		padding: .5em 1em;
-		color: @concreteDarker;
-		background: @clouds;
-		.border-radius(@baseBorderRadius);
+		&.active {
+			padding: .5em 0;
 
-		&:hover {
-			color: @whitesmoke;
-			background: @concrete;
+			span.divider {
+				position: relative;
+				padding: 0 .25em;
+				color: @concrete;
+				top: 0;
+			}
 		}
 
-		&:focus, &:active {
-			color: @whitesmoke;
-			background: @concreteDark;
+		span.divider {
+			position: relative;
+			padding: 0 .25em;
+			color: @concrete;
+			top: .5em;
 		}
-	}
 
-	li:first-child {
-		padding: 0;
-	}
+		a {
+			text-decoration: none;
+			font-weight: normal;
+			position: relative;
+			display: block;
+			float: left;
+			padding: .5em 1em;
+			color: @concreteDarker;
+			background: @clouds;
+			.border-radius(@baseBorderRadius);
 
-	li:last-child {
-		padding: .5em 0;
-	}
-	li .divider {
-		position: relative;
-		padding: 0 .25em;
-		color: @concrete;
-		top: .5em;
+			&:hover {
+				color: @whitesmoke;
+				background: @concrete;
+			}
+
+			&:focus, &:active {
+				color: @whitesmoke;
+				background: @concreteDark;
+			}
+		}
 	}
 }
 
