@@ -6,17 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c26cc59-147d-4905-8287-b2e1c6f93e3b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-base.less" afterPath="$PROJECT_DIR$/css/jf-base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-layout.less" afterPath="$PROJECT_DIR$/css/jf-layout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.css" afterPath="$PROJECT_DIR$/css/jf-template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-variables.less" afterPath="$PROJECT_DIR$/css/jf-variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/plugin.js.php" afterPath="$PROJECT_DIR$/js/plugin.js.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-css.php" afterPath="$PROJECT_DIR$/css/styles-css.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/template.desktop.js.php" afterPath="$PROJECT_DIR$/js/template.desktop.js.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/template.mobile.js.php" afterPath="$PROJECT_DIR$/js/template.mobile.js.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/font-awesome-3/variables.less" afterPath="$PROJECT_DIR$/css/font-awesome-3/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Jflex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="286" column="16" selection-start="13820" selection-end="13820" vertical-scroll-proportion="-133.55263" vertical-offset="3219" max-vertical-offset="9976">
+            <state line="286" column="16" selection-start="13820" selection-end="13820" vertical-scroll-proportion="5.5163045" vertical-offset="3219" max-vertical-offset="9976">
               <folding>
                 <marker date="1393960562492" expanded="false" signature="2881:2893" placeholder="..." />
               </folding>
@@ -50,46 +40,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles-css.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/styles-css.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.3152174" vertical-offset="870" max-vertical-offset="8526">
-              <folding />
-            </state>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-off-canvas.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="8" selection-start="3841" selection-end="3841" vertical-scroll-proportion="-6.6578946" vertical-offset="5866" max-vertical-offset="20851">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-layout.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="793" column="9" selection-start="12561" selection-end="12561" vertical-scroll-proportion="-9.157895" vertical-offset="22649" max-vertical-offset="44834">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-base.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-base.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1006" column="32" selection-start="16566" selection-end="16566" vertical-scroll-proportion="-8.815789" vertical-offset="28839" max-vertical-offset="33495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-variables.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="35" selection-start="2171" selection-end="2171" vertical-scroll-proportion="-21.394737" vertical-offset="1710" max-vertical-offset="8613">
+            <state line="11" column="27" selection-start="225" selection-end="225" vertical-scroll-proportion="-9.96875" vertical-offset="0" max-vertical-offset="1073">
               <folding />
             </state>
           </provider>
@@ -152,7 +109,6 @@
         <option value="$PROJECT_DIR$/languages/de-DE.tpl_jflex_j3.ini" />
         <option value="$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini" />
         <option value="$PROJECT_DIR$/css/jf-template.less" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/css/font-awesome-3/variables.less" />
         <option value="$PROJECT_DIR$/css/jf-variables.less" />
         <option value="$PROJECT_DIR$/css/jf-responsiveslides.less" />
@@ -164,6 +120,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/jf-base.less" />
         <option value="$PROJECT_DIR$/css/styles-css.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -220,34 +177,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,7 +286,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297769" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -573,14 +502,6 @@
         <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-11.017745" vertical-offset="10555" max-vertical-offset="11513" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="648" selection-end="648" vertical-scroll-proportion="1.0191693" vertical-offset="0" max-vertical-offset="1131" />
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap-2/bootstrap.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2001" />
@@ -630,15 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="16" selection-start="13820" selection-end="13820" vertical-scroll-proportion="-133.55263" vertical-offset="3219" max-vertical-offset="9976">
-          <folding>
-            <marker date="1393960562492" expanded="false" signature="2881:2893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="211" column="8" selection-start="3841" selection-end="3841" vertical-scroll-proportion="-6.6578946" vertical-offset="5866" max-vertical-offset="20851">
@@ -671,6 +583,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.3152174" vertical-offset="870" max-vertical-offset="8526">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="225" selection-end="225" vertical-scroll-proportion="-9.96875" vertical-offset="0" max-vertical-offset="1073">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="286" column="16" selection-start="13820" selection-end="13820" vertical-scroll-proportion="5.5163045" vertical-offset="3219" max-vertical-offset="9976">
+          <folding>
+            <marker date="1393960562492" expanded="false" signature="2881:2893" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

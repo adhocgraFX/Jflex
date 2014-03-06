@@ -13,8 +13,6 @@ update to Bootstrap 3 (...)
 
 update to font awesome 4 (...)
 
-simplify index.php > semantics
-
 
 Good things to keep:
 ====================
@@ -31,4 +29,4 @@ greyscale color scheme
 
 change grid system in index.php: pocket grid (Golden Ratio) + bootstrap grid
 
-more consequent section layout, + 2 positions
+more consequent section layout in index.php, + 2 positions
