@@ -152,6 +152,7 @@ function() {
             <nav id="nav" role="navigation">
                 <div class="nav-close-pad stickem">
                     <jdoc:include type="modules" name="nav" />
+                    <!-- module pos inside nav and sidebar -->
                     <?php if ($layout == 'mobile'):?>
                         <jdoc:include type="modules" name="nav_mobile" />
                     <?php endif;?>
@@ -160,7 +161,7 @@ function() {
                     </button>
                 </div>
 
-                <!-- module pos inside nav  -->
+                <!-- module pos inside nav eg search -->
                 <?php if ($this->countModules('nav_module')): ?>
                     <div class="nav-module-pad stickem" role="search">
                         <jdoc:include type="modules" name="nav_module" style="joomskeleton" />
@@ -240,7 +241,7 @@ function() {
                         </div>
                     <?php endif;?>
                 <?php endif;?>
-
+                <!-- module pos inside nav and sidebar -->
                 <?php if ($layout != 'mobile'):?>
                     <jdoc:include type="modules" name="nav_mobile" style="joomskeleton" />
                 <?php endif;?>
