@@ -2,8 +2,10 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/jquery-1.10.2.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery-noconflict.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery-migrate.min.min.js" />
         <item url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
-        <item url="file://$PROJECT_DIR$/js/scrollReveal.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -21,8 +23,11 @@
       <root url="file://$PROJECT_DIR$/js/jquery.responsiveText.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.fittext.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.flexslider.min.js" />
-      <root url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
       <root url="file://$PROJECT_DIR$/js/scrollReveal.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-1.10.2.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-noconflict.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-migrate.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/responsiveslides.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

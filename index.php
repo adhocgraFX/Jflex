@@ -5,7 +5,7 @@
  * @license		GNU/GPL
  * @copyright   blank-template index-php Grundstruktur mit css- und js-compressor: Alexander Schmidt
 **/
-defined( '_JEXEC' ) or die; 
+defined( '_JEXEC' ) or die;
 
 // joomla variables
 $app = JFactory::getApplication();
@@ -37,8 +37,12 @@ $maintitle = $this->params->get('maintitle');
 $subtitle = $this->params->get('subtitle');
 $sozialbuttons = $this->params->get('sozialbuttons');
 
+// unset scripts
+unset($doc->_scripts[$this->baseurl.'/media/jui/js/jquery.min.js']);
+unset($doc->_scripts[$this->baseurl.'/media/jui/js/bootstrap.min.js']);
+
 // Add Joomla! JavaScript Frameworks
-JHtml::_('bootstrap.framework');
+// JHtml::_('bootstrap.framework');
 
 // Add current user information
 $user = JFactory::getUser();
@@ -46,15 +50,17 @@ $user = JFactory::getUser();
 
 <!doctype html>
 <!-- ... Modernisierungen ... -->
-<!--[if IEMobile]><html lang="<?php echo $this->language; ?>" class="iemobile"> <![endif]-->
+<!--[if IEMobile]> <html lang="<?php echo $this->language; ?>" class="iemobile"> <![endif]-->
 <!--[if lt IE 7 ]> <html lang="<?php echo $this->language; ?>" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="<?php echo $this->language; ?>" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="<?php echo $this->language; ?>" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="<?php echo $this->language; ?>" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="<?php echo $this->language; ?>" class="no-js" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->language; ?>" class="no-js" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
 
 <head>
+<!-- js framework via cdn -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
 <!-- fonts -->
 <?php if ($headfont != "default"): ?>
