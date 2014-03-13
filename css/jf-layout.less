@@ -78,6 +78,12 @@
 	#main {
 		padding: 1em !important;
 	}
+
+	.contentpane {
+		.error-info {
+			width: 100%;
+		}
+	}
 }
 
 // # pocket grid system
@@ -235,6 +241,14 @@ header {
 			max-height: 40px;
 			width: auto !important;
 		}
+	}
+
+	.error-wrapper {
+		width: 100%;
+	}
+
+	.error-info {
+		width: 50%;
 	}
 }
 
@@ -429,6 +443,12 @@ header {
 		ul li {
 			margin-bottom: 5px !important;
 
+			&.active {
+				color: @whitesmoke;
+				background: @concreteDark !important;
+				border: solid 1px @gray;
+			}
+
 			a {
 				display: block;
 				padding: .5em 1em;
@@ -437,19 +457,19 @@ header {
 				background: @cloudsDark;
 				.border-radius(@baseBorderRadius);
 				border: 1px solid @concrete;
-			}
 
-			a:hover {
-				color: @whitesmoke;
-				background: @concrete !important;
-				text-decoration: none !important;
-				border: 1px solid @concreteDark;
-			}
+				&:hover {
+					color: @whitesmoke;
+					background: @concrete !important;
+					text-decoration: none !important;
+					border: 1px solid @concreteDark;
+				}
 
-			a:focus, a:active, .active a {
-				color: @whitesmoke;
-				background: @concreteDark !important;
-				border: solid 1px @gray;
+				&:focus, &:active {
+					color: @whitesmoke;
+					background: @concreteDark !important;
+					border: solid 1px @gray;
+				}
 			}
 		}
 	}
@@ -467,6 +487,10 @@ header {
 			li {
 				margin: 0 !important;
 
+				&.active {
+					background: @clouds !important;
+				}
+
 				a {
 					color: @concreteDark;
 					display: block;
@@ -479,7 +503,7 @@ header {
 						text-decoration: none !important;
 					}
 
-					&:focus, &:active, .active {
+					&:focus, &:active {
 						color: @whitesmoke;
 						background: @concrete !important;
 					}

@@ -58,6 +58,7 @@ $user = JFactory::getUser();
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->language; ?>" class="no-js" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
 
 <head>
+
 <!-- js framework via cdn -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -67,7 +68,7 @@ $user = JFactory::getUser();
     <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($headfont); ?>.js"></script>
 <?php endif;?>
 <?php if ($bodyfont != "default"): ?>
-    <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($bodyfont); ?>.js"></script>
+    <script src="http://use.edgefonts.net/<?php echo htmlspecialchars($bodyfont); ?>:n3,i3,n4,i4,n7,i7.js"></script>
 <?php endif;?>
 
 <!-- bildverkleinerung über mobify cdn -->

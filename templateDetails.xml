@@ -31,7 +31,8 @@
 	</description>
 	<files>
 		<folder>css</folder>
-		<folder>html</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
 		<folder>languages</folder>
