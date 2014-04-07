@@ -7,9 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c26cc59-147d-4905-8287-b2e1c6f93e3b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-base.less" afterPath="$PROJECT_DIR$/css/jf-base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.css" afterPath="$PROJECT_DIR$/css/jf-template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-variables.less" afterPath="$PROJECT_DIR$/css/jf-variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jflex.iws" />
@@ -32,31 +30,7 @@
     <favorites_list name="Jflex" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="29" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-47.31579" vertical-offset="0" max-vertical-offset="10208">
-              <folding>
-                <marker date="1394714000345" expanded="false" signature="3270:3282" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="2" selection-start="265" selection-end="265" vertical-scroll-proportion="0.40320855" vertical-offset="0" max-vertical-offset="935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -124,12 +98,12 @@
         <option value="$PROJECT_DIR$/component.php" />
         <option value="$PROJECT_DIR$/error.php" />
         <option value="$PROJECT_DIR$/css/jf-layout.less" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/jf-print.less" />
         <option value="$PROJECT_DIR$/templateDetails.xml" />
         <option value="$PROJECT_DIR$/css/jf-base.less" />
         <option value="$PROJECT_DIR$/css/jf-variables.less" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -174,7 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,15 +170,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings" />
-    <property name="last_opened_file_path" value="$USER_HOME$/node_modules/.bin/lessc.cmd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -286,7 +274,11 @@
       <created>1394725108095</created>
       <updated>1394725108095</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="readme">
+      <created>1396027133034</created>
+      <updated>1396027133034</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -311,27 +303,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21888413" sideWeight="0.45040214" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20708154" sideWeight="0.52294457" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20600858" sideWeight="0.52294457" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2636656" sideWeight="0.47705546" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14936954" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14936954" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -352,7 +344,8 @@
     <MESSAGE value="rearrange js injection via cdn (bootstrap and jquery)" />
     <MESSAGE value="new FiraSans default font" />
     <MESSAGE value="new FiraSans default font: fonts directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="new FiraSans default font: fonts directory" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -460,11 +453,6 @@
         <state line="33" column="37" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.6847826" vertical-offset="153" max-vertical-offset="1073" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/font-awesome-3/font-awesome.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1131" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/mod_menu/default_heading.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="971" />
@@ -513,16 +501,6 @@
     <entry file="file://$PROJECT_DIR$/css/jf-responsiveslides.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="232" column="5" selection-start="3917" selection-end="3917" vertical-scroll-proportion="7.211147" vertical-offset="0" max-vertical-offset="6931" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font-awesome-3/path.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font-awesome-3/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.12608695" vertical-offset="0" max-vertical-offset="21489" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/languages/en-GB.tpl_jflex_j3.ini">
@@ -589,39 +567,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles-css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-0.12649946" vertical-offset="986" max-vertical-offset="8526">
-          <folding />
-        </state>
+        <state line="34" column="14" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-0.12649946" vertical-offset="986" max-vertical-offset="8526" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1340" column="5" selection-start="21682" selection-end="21682" vertical-scroll-proportion="0.3217012" vertical-offset="38565" max-vertical-offset="45530">
-          <folding />
-        </state>
+        <state line="1340" column="5" selection-start="21682" selection-end="21682" vertical-scroll-proportion="0.3217012" vertical-offset="38565" max-vertical-offset="45530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-2.8778627" vertical-offset="4611" max-vertical-offset="8584">
-          <folding />
-        </state>
+        <state line="68" column="0" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-2.8778627" vertical-offset="4611" max-vertical-offset="8584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1055" column="4" selection-start="17179" selection-end="17179" vertical-scroll-proportion="0.0" vertical-offset="30595" max-vertical-offset="34191">
-          <folding />
-        </state>
+        <state line="1055" column="4" selection-start="17179" selection-end="17179" vertical-scroll-proportion="0.0" vertical-offset="30595" max-vertical-offset="34191" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/css/font-awesome-3/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="29" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-47.31579" vertical-offset="0" max-vertical-offset="10208">
-          <folding>
-            <marker date="1394714000345" expanded="false" signature="3270:3282" placeholder="..." />
-          </folding>
-        </state>
+        <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.12649946" vertical-offset="0" max-vertical-offset="21489" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/font-awesome-3/path.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -629,8 +600,20 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="265" selection-end="265" vertical-scroll-proportion="0.40320855" vertical-offset="0" max-vertical-offset="935">
-          <folding />
+        <state line="15" column="10" selection-start="369" selection-end="369" vertical-scroll-proportion="0.47180045" vertical-offset="0" max-vertical-offset="922" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/font-awesome-3/font-awesome.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="307" column="12" selection-start="16260" selection-end="16260" vertical-scroll-proportion="1.3645656" vertical-offset="8102" max-vertical-offset="9454">
+          <folding>
+            <marker date="1396091136752" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

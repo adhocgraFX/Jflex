@@ -120,11 +120,10 @@ function() {
 <!-- äußerer Rahmen	-->
 <div id="outer-wrapper">
 	<?php if ($layout == 'mobile'):?>
-	<noscript>
-	    <div class="nav-simple-btn" role="navigation" > <a href="#simple-nav">Simple Navigation</a> </div>
-	</noscript>
+	    <noscript>
+	        <div class="nav-simple-btn" role="navigation" > <a href="#simple-nav">Simple Navigation</a> </div>
+	    </noscript>
 	<?php endif; ?>
-
     <!--  innerer Rahmen  -->
     <div id="inner-wrapper" class="stickem-container">
         <!-- header -->
@@ -136,17 +135,14 @@ function() {
 				    </button>
 			    </div>
             <?php endif;?>
-
             <!-- seitliches logobild  -->
             <?php if ($headerlogo): ?>
                 <?php if ($layout != 'mobile'):?>
                     <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>"> <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
                 <?php endif;?>
             <?php endif;?>
-
             <!-- logotext  -->
             <div class="logotext stickem"> <a href="<?php echo $this->baseurl ?>"><h1 class="logotext-top"><?php echo htmlspecialchars($maintitle); ?></h1><h1 class="logotext-sub"><?php echo htmlspecialchars($subtitle); ?></h1> </a> </div>
-
             <!-- slideshow -->
             <?php if ($layout != 'mobile'):?>
                 <?php if ($this->countModules('slideshow')): ?>
@@ -155,7 +151,6 @@ function() {
                     </div>
                 <?php endif;?>
             <?php endif;?>
-
             <nav id="nav" role="navigation">
                 <div class="nav-close-pad stickem">
                     <jdoc:include type="modules" name="nav" />
@@ -167,7 +162,6 @@ function() {
                         <a href="#top"><?php echo JText::_('TPL_JF3_NAVCLOSE'); ?></a>
                     </button>
                 </div>
-
                 <!-- module pos inside nav eg search -->
                 <?php if ($this->countModules('nav_module')): ?>
                     <div class="nav-module-pad stickem" role="search">
@@ -176,7 +170,6 @@ function() {
                 <?php endif;?>
             </nav>
         </header>
-
         <!-- head row -->
         <?php if ($layout != 'mobile'):?>
             <?php if ($this->countModules('head_row')): ?>
@@ -185,10 +178,8 @@ function() {
                 </section>
 		    <?php endif; ?>
         <?php endif; ?>
-
         <!-- content Rahmen-->
         <section class="block-group" id="main-pad">
-
             <!-- content head row -->
             <?php if ($layout != 'mobile'):?>
                 <?php if ($this->countModules('content_head_row')): ?>
@@ -197,16 +188,12 @@ function() {
                     </section>
                 <?php endif; ?>
             <?php endif; ?>
-
             <!-- 2 columns: content + message above content | sidebar -->
 		    <section class="block" id="main" role="main">
-
                 <!-- message -->
                 <jdoc:include type="message" />
-
                 <!-- old browser info -->
                 <!--[if lt IE 9]> <p class="box alert">You are using an outdated browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">activate Google Chrome Frame</a> to improve your experience.</p> <![endif]-->
-
                 <!-- typeresizer -->
                 <?php if ($layout == 'mobile'):?>
                     <?php if ($typesize == 1): ?>
@@ -220,21 +207,16 @@ function() {
                         </div>
                     <?php endif;?>
                 <?php endif;?>
-
                 <!-- content -->
                 <jdoc:include type="component" />
-
                 <!-- breadcrumbs -->
                 <?php if ($this->countModules('breadcrumbs')): ?>
                     <div class="breadcrumbs-pad" role="navigation">
                         <jdoc:include type="modules" name="breadcrumbs" />
                     </div>
                 <?php endif; ?>
-
             </section>
-
             <aside class="block" id="sidebar" role="complementary">
-
                 <!-- typeresizer -->
                 <?php if ($layout != 'mobile'):?>
                     <?php if ($typesize == 1): ?>
@@ -252,11 +234,8 @@ function() {
                 <?php if ($layout != 'mobile'):?>
                     <jdoc:include type="modules" name="nav_mobile" style="joomskeleton" />
                 <?php endif;?>
-
                 <jdoc:include type="modules" name="sidebar" style="joomskeleton"  />
-
             </aside>
-
             <!-- content head row content first in mobile moder-->
             <?php if ($layout == 'mobile'):?>
                 <?php if ($this->countModules('content_head_row')): ?>
@@ -265,16 +244,13 @@ function() {
                     </section>
                 <?php endif; ?>
             <?php endif; ?>
-
             <!-- content bottom row-->
             <?php if ($this->countModules('content_bottom_row')): ?>
                 <section class="content_bottom-row block row-fluid" role="complementary">
                     <jdoc:include type="modules" name="content_bottom_row" style="joomskeleton" />
                 </section>
             <?php endif; ?>
-
         </section> <!-- content Rahmen -->
-
         <!-- head row content first in mobile mode -->
         <?php if ($layout == 'mobile'):?>
             <?php if ($this->countModules('head_row')): ?>
@@ -283,14 +259,12 @@ function() {
 		        </section>
 		    <?php endif; ?>
         <?php endif; ?>
-
         <!-- bottom row -->
 		<?php if ($this->countModules('bottom_row')): ?>
 		    <section class="bottom-row row-fluid" role="complementary">
 			    <jdoc:include type="modules" name="bottom_row" style="joomskeleton" />
 		    </section>
 		<?php endif; ?>
-
         <!-- footer -->
         <footer role="contentinfo">
             <!-- footer module -->
